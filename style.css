@@ -22,10 +22,6 @@
     font-style: normal;
 }
 
-.logo{
-    margin-left: 4vw;
-}
-
 .logo img{
     height: 9vh;
     width: 12vw;
@@ -33,6 +29,7 @@
 
 .logo-menu{
     display: flex;
+    margin-left: 4vw;
     gap: 2vw;
 }
 
@@ -55,7 +52,7 @@
     transition: all 0.2s;
 }
 
-#home{
+.menu a.active{
     color: white;
     opacity: 100%;
     text-shadow: 1px 2px 4px #6BD2D9;
@@ -76,6 +73,11 @@
     transition: all 0.2s;
 }
 
+.menu-button a:hover{
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+}
+
 .menu-button button{
     background-color: #FFCF0D;
     height: 100%;
@@ -85,23 +87,8 @@
     border: transparent;
 }
 
-.menu-button a:hover{
-    color: white;
-    opacity: 100%;
-    text-shadow: 1px 2px 4px #6BD2D9;
-}
- 
-.jumbotron::after{ 
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    /* backdrop-filter: blur(10px); */
-    z-index: 2;
-}
-
 .jumbotron{
-    /* background-image: url(assets/img/jumbotronHomePic.jpg); */
+    background-image: url(assets/img/bg.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -109,15 +96,17 @@
 }
 
 .jumbotron video{
-    position: absolute;
+    /* position: absolute; */
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
 }
 
 .jumbotron-container {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     z-index: 2;
