@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: genshin;
-    src: url('/zhcn.ttf');
+    font-family: Tahoma;
+    src: url('Tahoma Regular font.ttf');
 }
 
 .navbar{
@@ -18,10 +18,28 @@
     width: 100vw;
     height: 10vh;
     z-index: 5;
+    font-family: Tahoma;
+    font-style: normal;
+}
+
+.logo{
+    margin-left: 4vw;
+}
+
+.logo img{
+    height: 9vh;
+    width: 12vw;
 }
 
 .logo-menu{
     display: flex;
+    gap: 2vw;
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
 }
 
 .menu{
@@ -32,7 +50,7 @@
 
 .menu a{
     color: white;
-    opacity: 70%;
+    opacity: 80%;
     text-decoration: none;
     transition: all 0.2s;
 }
@@ -46,7 +64,7 @@
 .menu-button a{
     color: white;
     text-decoration: none;
-    opacity: 70%;
+    opacity: 80%;
     transition: all 0.2s;
 }
 
@@ -55,7 +73,7 @@
     height: 100%;
     padding: 2vh 3vw;
     font-size: 1em;
-    font-weight: bold;
+    color: #5F5656;
     border: transparent;
 }
 
