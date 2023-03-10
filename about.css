@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+#header{
+    background-image: url(assets/img/aboutus/header.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}  
+
+/* #empty{
+    background-color: aqua;
+    width: 100vw;
+} */
+
+#text{
+    display: flex;
+    position: relative;
+    justify-content: right;
+}
+
+#txtheader{
+    width: 40vw;
+    height: 32vh;
+    position: absolute;
+    right: 5em;
+}
+
+#overview{
+    background-image: url();
+}
