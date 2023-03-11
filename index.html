@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="myNav">
         <div class="logo-menu">
             <div class="logo">
                 <img src="assets/img/logo.png" alt="logo"></img>
@@ -25,15 +25,24 @@
         </div>
         <div class="menu-button">
             <a href="register.html">REGISTER</a>
-            <button onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
+            <button
+                onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-regular fa-bars"></i>
+        </a>
     </nav>
     <div class="jumbotron">
         <!-- <video autoplay loop src="assets/video/jumbotronHome.mp4"></video> -->
         <div class="jumbotron-container">
             <p>Released on Multiple Platforms - Download Now!</p>
         </div>
+        <div class="jumbotron-images">
+            <img src="assets/img/tw.png" alt="warning">
+        </div>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>
