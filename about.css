@@ -39,7 +39,7 @@ body{
 }
 
 #overview{
-    height: 120vh;
+    height: 680px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -64,10 +64,10 @@ body{
 
 #overview h1{
     font-family: 'Tahoma';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
 /* identical to box height */
 
 
@@ -76,12 +76,43 @@ color: #FFFFFF;
 
 #overview h1:hover{
     font-family: 'Tahoma';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
 /* identical to box height */
 
 
 text-shadow: 3px 1px 8px #6BD2D9;
+}
+
+#gamefeatures{
+    background-image: url(assets/img/aboutus/bggamefeature.png);
+    background-size: 100% 100%;
+    height: 680px;
+}
+
+#emptyspace{
+    height: 95px;
+}
+
+#galleries{
+    background-image: url(assets/img/aboutus/backgroundgaleries.png);
+    background-size: 100% 100%;
+    height: 680px;
+    display: grid;
+}
+
+#galleries h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+
+    text-align: center;
+}
+
+#platforms{
+    
 }
