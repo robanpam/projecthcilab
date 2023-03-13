@@ -13,17 +13,12 @@ body{
 
 #header{
     background-image: url(assets/img/aboutus/header.png);
-    height: 100vh;
+    height: 110vh;
     background-size: 100% 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     
 }  
-
-/* #empty{
-    background-color: aqua;
-    width: 100vw;
-} */
 
 #text{
     display: flex;
@@ -80,10 +75,7 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-/* identical to box height */
-
-
-text-shadow: 3px 1px 8px #6BD2D9;
+    text-shadow: 3px 1px 8px #6BD2D9;
 }
 
 #gamefeatures{
@@ -93,27 +85,150 @@ text-shadow: 3px 1px 8px #6BD2D9;
 }
 
 #emptyspace{
-    height: 95px;
+    height: 70px;
 }
 
 #galleries{
     background-image: url(assets/img/aboutus/backgroundgaleries.png);
     background-size: 100% 100%;
-    height: 680px;
+    height: 615px;
     display: grid;
+    grid-template-rows: 1fr 3fr;
 }
 
-#galleries h1{
+#galleriestitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleriestitle h1{
+    text-align: center;
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
     line-height: 84px;
+}
 
-    text-align: center;
+#galleriescontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linespace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linespace img{
+
+    height: 70vh;
+}
+
+#videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleriescontent h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 77px;
+    transition: 500ms;
+    color: #FFFFFF;
+}
+
+#galleriescontent h1:hover{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 70px;
+    text-shadow: 3px 1px 8px #6BD2D9;
+    transition: 500ms;
+}
+
+#emptyspace2{
+    height: 70px;
 }
 
 #platforms{
-    height: 890px;
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#genshinlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#genshinlogo img{
+    width: 370px;
+    height: 150px;
+}
+
+#platformstext{
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#ptext1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ptext1 h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
+#ptext2{
+    display: flex;
+    justify-content: center;
+}
+
+#ptext2 h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+
+    color: #0B0A0A;
+}
+
+#platformslogo{
+    display: flex;
+}
+
+#platformsbuttonup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#platformsbuttonup img{
+    width: 35px;
+    height: 50px;
 }
 
