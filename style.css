@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%
 }
 
 @font-face {
     font-family: Tahoma;
     src: url('Tahoma Regular font.ttf');
+}
+
+@font-face {
+    font-family: genshin;
+    src: url('zh-cn.ttf');
 }
 
 .navbar {
@@ -168,7 +174,7 @@
     justify-content: center;
     color: #FDFDFD;
     font-family: Tahoma;
-    font-size: 25px;
+    font-size: 1.5em;
     text-shadow: 0px 4px 4px rgba(255, 207, 13, 0.4);
     width: 100vw;
     height: 20vh;
@@ -202,4 +208,39 @@
     margin-left: 38.8%;
     width: 2vw;
     height: 9vh;
+}
+
+.newchar {
+    background-image: url(assets/img/home/sumeru2.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.newchar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #492619;
+    mix-blend-mode: color-burn;
+    font-family: genshin;
+    font-size: 2em;
+    width: 100vw;
+    height: 45vh;
+    z-index: 2;
+}
+
+.newchar-char{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.newchar-char img {
+    margin-right: 10vw;
+    width: 47%;
+    height: 60vh;
 }
