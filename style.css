@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%
+    max-width: 100%;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -21,8 +22,8 @@
     background-color: rgba(60, 53, 59, 0.5);
     justify-content: space-between;
     /* padding: 2%; */
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: 10%;
     z-index: 5;
     font-family: Tahoma;
     font-style: normal;
@@ -30,13 +31,13 @@
 }
 
 .logo img {
-    height: 9vh;
-    width: 12vw;
+    height: 95%;
+    width: 100%;
 }
 
 .logo-menu {
     display: flex;
-    margin-left: 4vw;
+    margin-left: 4%;
     gap: 2vw;
 }
 
@@ -132,9 +133,9 @@
 }
 
 .jumbotron {
-    background-image: url(assets/img/home/bg.jpg);
+    /* background-image: url(assets/img/home/bg.jpg); */
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -142,33 +143,34 @@
 .jumbotron video {
     position: absolute;
     object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .jumbotron-play {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 50%;
     z-index: 2;
     gap: 0.5vw;
 }
 
 .jumbotron-play img {
-    margin-top: 70vh;
-    width: 3vw;
-    height: 8vh;
+    margin-top: 35%;
+    width: 2.5%;
+    height: 15%;
 }
 
 .jumbotron-play img.play {
-    width: 3vw;
-    height: 6vh;
+    width: 2.5%;
+    height: 10%;
 }
 
 .jumbotron-container {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,44 +178,59 @@
     font-family: Tahoma;
     font-size: 1.5em;
     text-shadow: 0px 4px 4px rgba(255, 207, 13, 0.4);
-    width: 100vw;
-    height: 20vh;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
 }
 
 .jumbotron-container p{
-    margin-top: 10vh;
+    margin-top: 20%;
 }
 
 .jumbotron-download {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 50%;
     gap: 1.5vw;
     opacity: 0.7;
+    z-index: 1;
 }
 
 .jumbotron-download img {
-    width: 9vw;
-    height: 6vh;
+    margin-top: 51%;
+    width: 9%;
+    height: 11%;
+}
+
+.jumbotron-images {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 20%;
+    margin-top: 39%;
+    z-index: 3;
 }
 
 .jumbotron-images img {
-    margin-left: 1vw;
-    width: 9vw;
-    height: 12vh;
+    margin-left: 1%;
+    width: 10%;
+    height: 65%;
 }
 
 .jumbotron-images img:not(:first-child) {
-    margin-left: 38.8%;
-    width: 2vw;
-    height: 9vh;
+    margin-left: 38%;
+    width: 2.5%;
+    height: 45%;
 }
 
 .newchar {
     background-image: url(assets/img/home/sumeru2.jpg);
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -226,21 +243,27 @@
     mix-blend-mode: color-burn;
     font-family: genshin;
     font-size: 2em;
-    width: 100vw;
-    height: 45vh;
+    width: 100%;
+    height: 50%;
     z-index: 2;
+}
+
+.newchar-title p span {
+    font-size: 40px;
 }
 
 .newchar-char{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 50vh;
 }
 
 .newchar-char img {
-    margin-right: 10vw;
+    position: absolute;
+    top: 31%;
+    left: 21%;
     width: 47%;
-    height: 60vh;
+    height: 60%;
 }
