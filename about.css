@@ -83,10 +83,14 @@ color: #FFFFFF;
     /* position: fixed; */
     background-image: url(assets/img/aboutus/bggamefeature.png);
     background-size: 100% 100%;
-    height: 305vh;
+    height: 420vh;
     display: grid;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
     background-attachment: fixed;
+}
+
+#emptyfeatures{
+    height: 3vw;
 }
 
 #gamefeaturestitle{
@@ -113,7 +117,7 @@ color: #FFFFFF;
 }
 
 #adventureimage{
-    margin-top: 1vw;
+
 }
 
 #adventureimage img{
@@ -121,15 +125,262 @@ color: #FFFFFF;
     height: 65vh;
 }
 
-#discover{
+#adventuretext{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+
+#adventuretitle{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-right: 5vw;
+}
+
+#adventuretitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#adventureexp{
+    display: flex;
+    margin-right: 5vw;
+}
+
+#adventureexp h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#discover{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#discoverimage img{
+    width: 70vw;
+    height: 65vh;
+}
+
+#discovertext{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+
+#discovertitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+#discovertitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+#discoverexp{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5vw;
+}
+
+#discoverexp h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#travelfeatures{
+    display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#discoverimage{
+#travelimage{
+
+}
+
+#travelimage img{
+    width: 70vw;
+    height: 65vh;
+}
+
+#traveltext{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+
+#traveltitle{
     display: flex;
-    justify-content: flex-end ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vw;
+    margin-right: 5vw;
+}
+
+#traveltitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#travelexp{
+    display: flex;
+    margin-right: 5vw;
+}
+
+#travelexp h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#masterfeatures{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#masterimage{
+
+}
+
+#masterimage img{
+    width: 70vw;
+    height: 65vh;
+}
+
+#mastertext{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+
+#mastertitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+#mastertitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#masterexp{
+    display: flex;
+    margin-left: 5vw;
+}
+
+#masterexp h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#buildfeatures{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#buildimage{
+    width: 70vw;
+    height: 65vh;
+}
+
+#buildimage img{
+    width: 70vw;
+    height: 65vh;
+}
+
+#buildtext{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+
+#buildtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vw;
+    margin-right: 5vw;
+}
+
+#buildtitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#buildexp{
+    display: flex;
+    margin-right: 5vw;
+}
+
+#buildexp h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
 }
 
 #emptyspace{
