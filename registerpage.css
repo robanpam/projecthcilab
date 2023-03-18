@@ -6,6 +6,89 @@ body{
 
 }
 
+.navbar {
+    position: absolute;
+    display: flex;
+    background-color: rgba(60, 53, 59, 0.5);
+    justify-content: space-between;
+    /* padding: 2%; */
+    width: 100%;
+    height: 10%;
+    z-index: 5;
+    font-family: Tahoma;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 95%;
+    width: 100%;
+}
+
+.logo-menu {
+    display: flex;
+    margin-left: 4%;
+    gap: 2vw;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu a {
+    color: white;
+    opacity: 80%;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.menu a.active {
+    color: white;
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu a:hover {
+    /* border-top: 5px solid #FFCF0D; */
+    /* border-bottom: 5px solid transparent; */
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+    /* padding-top: 20px; */
+}
+
+.menu-button a {
+    color: white;
+    text-decoration: none;
+    opacity: 80%;
+    transition: all 0.2s;
+}
+
+.menu-button a:hover {
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu-button button {
+    background-color: #FFCF0D;
+    height: 100%;
+    padding: 2vh 3vw;
+    font-size: 1em;
+    color: #5F5656;
+    border: transparent;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
 #registerpagearea{
     background-image: url(assets/img/registerpage/registerbg.jpg);
     background-size: 100% 100%;
@@ -86,8 +169,38 @@ body{
 #registerarea{
     background-image: url(assets/img/registerpage/registerareabg.png);
     margin-left: 5vw;
-    margin-right: 10vw;
-    margin-top: 15vh;
+    margin-right: 11vw;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#signuptitle{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signuptitle h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#username{
+    
+}
+
+#playforfree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer{
