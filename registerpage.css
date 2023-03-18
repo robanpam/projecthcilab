@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+
+body{
+
+}
+
+#registerpagearea{
+    background-image: url(assets/img/registerpage/registerbg.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#welcometext{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#welcome1{
+    height: 25vh;
+}
+
+#welcome2{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome2 img{
+    width: 30vw;
+    height: 25;
+}
+
+#welcome3{
+    height: 25vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#welcome31{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome31 h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#welcome32 h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#welcome4{
+    margin-left: 1vw;
+    margin-top: 5vh;
+}
+
+#welcome4 img{
+    width: 12vw;
+    height: 17vh;
+}
+
+#registerarea{
+    background-image: url(assets/img/registerpage/registerareabg.png);
+    margin-left: 5vw;
+    margin-right: 10vw;
+    margin-top: 15vh;
+}
+
+#footer{
+    background-image: url(assets/img/registerpage/footerbg.png);
+    height: 60vh;
+}
