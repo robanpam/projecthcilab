@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -171,8 +173,9 @@ body{
     margin-left: 5vw;
     margin-right: 11vw;
     margin-top: 10vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid yellow;
 }
 
 #signuptitle{
@@ -186,24 +189,143 @@ body{
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 48px;
     text-align: center;
 
     color: #FFFFFF;
 }
 
-#username{
-    
+#registersection {
+    /* margin-top: 3vw; */
+    display: flex;
+
+    justify-content: center;
+    align-items: start;
+    /* border: 5px solid blue; */
+    height: 30vw;
 }
 
-#playforfree{
+#registerform{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-top: 2vw;
 }
+
+.error{
+    margin-bottom: calc(0.3vw + 5px);
+    font-size: calc(0.7vw + 5px);
+    height: 1vw;
+    width: 10vw;
+    color: red;
+    /* border: 5px solid yellow; */
+}
+
+
+
+#name{
+    background: #FFFFFF;
+    border-radius: 0.3vw;
+    border: 0.2vw solid plum;
+    height: 5vh; 
+    width: 20vw;
+}
+
+#name::placeholder{
+    padding-left: 1vw;
+}
+
+#age{
+    background: #FFFFFF;
+    border-radius: 0.3vw;
+    border: 0.2vw solid plum;
+    height: 5vh; 
+    width: 20vw;
+}
+
+#age::placeholder{
+    padding-left: 1vw;
+}
+
+#email{
+    background: #FFFFFF;
+    border-radius: 0.3vw;
+    border: 0.2vw solid plum;
+    height: 5vh; 
+    width: 20vw;
+}
+
+#email::placeholder{
+    padding-left: 1vw;
+}
+
+#password{
+    background: #FFFFFF;
+    border-radius: 0.3vw;
+    border: 0.2vw solid plum;
+    height: 5vh; 
+    width: 20vw;
+}
+
+#password::placeholder{
+    padding-left: 1vw;
+}
+
+#confirmpw{
+    background: #FFFFFF;
+    border-radius: 0.3vw;
+    border: 0.2vw solid plum;
+    height: 5vh; 
+    width: 20vw;
+}
+
+#confirmpw::placeholder{
+    padding-left: 1vw;
+}
+
+#checkbox{
+    margin-right:  1vw;
+}
+#agreeregister{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw; 
+}
+
+#agreetext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+/* identical to box height, or 200% */
+    color: #FFFFFF;
+}
+
+#forbutton {
+    margin-top: 1vw;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green; */
+    justify-content: center;
+    align-items: last baseline;
+    /* margin-bottom: 1vw; */
+}
+
+button{
+    width: 10vw;
+    height: 3vw;
+}
+
 
 #footer{
     background-image: url(assets/img/registerpage/footerbg.png);
     height: 60vh;
 }
+
+
+
