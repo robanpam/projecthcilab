@@ -2,12 +2,18 @@
     margin: 0;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
 
-    background-image: url(assets/img/aboutus/);
+    background-image: url(assets/img/aboutus/background.webp);
     background-attachment: fixed;
+    background-position: 20%;
     background-size: cover;
-    height: 4929px;
+    height: 850px;
     background-repeat: no-repeat;
 }
 
@@ -16,7 +22,7 @@ body{
     height: 110vh;
     background-size: 100% 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     
 }  
 
@@ -46,9 +52,27 @@ body{
 }
 
 #galoview{
+    display: grid;
+    grid-template-rows: 1.2fr 0.9fr;
+}
+
+#galleriesoverview{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 3vh;
+}
+
+#arrowdown{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
+}
+
+#arrowdown img{
+    width: 3vw;
+    height: 12vh;
 }
 
 #platformoview{
@@ -411,7 +435,8 @@ color: #FFFFFF;
 
 #galleriescontent{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
+    margin-bottom: 7vh;
 }
 
 #photos{
@@ -422,12 +447,11 @@ color: #FFFFFF;
 
 #linespace{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 3vw;
 }
 
 #linespace img{
-
     height: 70vh;
 }
 
@@ -435,6 +459,43 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 9vw;
+}
+
+#scroller{
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+}
+
+#scrollerup{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#scrollerup img{
+    width: 3vw;
+    height: 10vh;
+}
+
+#scrollerline{
+    display: flex;
+    justify-content: center;
+}
+
+#scrollerline img{
+    width: 0.2vw;
+    height: 50vh;
+}
+
+#scrollerdown{
+    display: flex;
+    justify-content: center;
+}
+
+#scrollerdown img{
+    width: 3vw;
+    height: 10vh;
 }
 
 #galleriescontent h1{
@@ -539,7 +600,6 @@ color: #FFFFFF;
 #platformsbuttonup{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #platformsbuttonup img{
@@ -547,3 +607,7 @@ color: #FFFFFF;
     height: 50px;
 }
 
+#footer{
+    background-image: url(assets/img/aboutus/footerbg.png);
+    height: 50vh;
+}
