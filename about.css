@@ -17,6 +17,122 @@ body{
     background-repeat: no-repeat;
 }
 
+.navbar {
+    position: absolute;
+    display: flex;
+    background-color: rgba(60, 53, 59, 0.5);
+    justify-content: space-between;
+    /* padding: 2%; */
+    width: 100%;
+    height: 10%;
+    z-index: 5;
+    font-family: Tahoma;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 95%;
+    width: 100%;
+}
+
+.logo-menu {
+    display: flex;
+    margin-left: 4%;
+    gap: 2vw;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu a {
+    color: white;
+    opacity: 80%;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.menu a.active {
+    color: white;
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu a:hover {
+    /* border-top: 5px solid #FFCF0D; */
+    /* border-bottom: 5px solid transparent; */
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+    /* padding-top: 20px; */
+}
+
+.menu-button a {
+    color: white;
+    text-decoration: none;
+    opacity: 80%;
+    transition: all 0.2s;
+}
+
+.menu-button a:hover {
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu-button button {
+    background-color: #FFCF0D;
+    height: 100%;
+    padding: 2vh 3vw;
+    font-size: 1em;
+    color: #5F5656;
+    border: transparent;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: none;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 #header{
     background-image: url(assets/img/aboutus/header.png);
     height: 110vh;
@@ -63,16 +179,16 @@ body{
     margin-bottom: 3vh;
 }
 
-#arrowdown{
+#oviewscrolldown{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
 }
 
-#arrowdown img{
+#oviewscrolldown img{
     width: 3vw;
-    height: 12vh;
+    height: 10vh;
 }
 
 #platformoview{
@@ -103,17 +219,85 @@ color: #FFFFFF;
 }
 
 #gamefeatures{
-    /* position: fixed; */
     background-image: url(assets/img/aboutus/bggamefeature.png);
     background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    height: 470vh;
+    /* display: grid;
+    grid-template-columns: 1.85fr 0.15fr; */
+    margin-bottom: vh;
+    border: 5px solid rebeccapurple;
+}
+
+#gamefeaturescontent{
     height: 420vh;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
-    background-attachment: fixed;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+/* #gamefeaturesscroll{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 5px solid yellow   ;
+} */
+
+#gamefeaturesscroller{
+    margin-top: 15vh;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 100vh;
+    top: 10%;
+    bottom: 10%;
+    margin-bottom: 15vh;
+    margin-right: 2vw;
+    border: 5px solid green;
+
+}
+
+#gfscrollerup{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#gfscrollerup img{
+    position: sticky;
+    width: 3vw;
+    height: 10vh;
+}
+
+#gfscrollerline{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.3vw;
+}
+
+#gfscrollerline img{
+    position: sticky;
+    width: 0.2vw;
+    height: 50vh;
+}
+
+#gfscrollerdown{
+    display: flex;
+    justify-content: center;
+}
+
+#gfscrollerdown img{
+    position: sticky;
+    width: 3vw;
+    height: 10vh;
 }
 
 #emptyfeatures{
-    height: 3vw;
+    height: 10vw;
 }
 
 #gamefeaturestitle{
@@ -407,7 +591,7 @@ color: #FFFFFF;
 }
 
 #emptyspace{
-    height: 70px;
+    height: 20vh;
 }
 
 #galleries{
@@ -523,9 +707,9 @@ color: #FFFFFF;
 }
 
 #platforms{
-    height: 700px;
+    height: 100vh;
     display: grid;
-    grid-template-rows: 1.1fr 1fr 0.5fr;
+    grid-template-rows: 1.1fr 0.7fr 0.3fr;
 }
 
 #genshinlogo{
@@ -600,6 +784,7 @@ color: #FFFFFF;
 #platformsbuttonup{
     display: flex;
     justify-content: center;
+    align-items: first baseline;
 }
 
 #platformsbuttonup img{
