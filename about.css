@@ -17,7 +17,6 @@ body {
     background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
 .navbar {
     position: absolute;
     display: flex;
@@ -134,10 +133,7 @@ body {
     }
 }
 
-#header{
-=======
 #header {
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
     background-image: url(assets/img/aboutus/header.png);
     height: 110vh;
     background-size: 100% 100%;
@@ -183,22 +179,14 @@ body {
     margin-bottom: 3vh;
 }
 
-<<<<<<< HEAD
-#oviewscrolldown{
-=======
-#arrowdown {
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
+#oviewscrolldown {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
 }
 
-<<<<<<< HEAD
-#oviewscrolldown img{
-=======
-#arrowdown img {
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
+#oviewscrolldown img {
     width: 3vw;
     height: 10vh;
 }
@@ -230,12 +218,7 @@ body {
     text-shadow: 3px 1px 8px #6BD2D9;
 }
 
-<<<<<<< HEAD
-#gamefeatures{
-=======
 #gamefeatures {
-    /* position: fixed; */
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
     background-image: url(assets/img/aboutus/bggamefeature.png);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -247,7 +230,7 @@ body {
     border: 5px solid rebeccapurple;
 }
 
-#gamefeaturescontent{
+#gamefeaturescontent {
     height: 420vh;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
@@ -260,7 +243,7 @@ body {
     border: 5px solid yellow   ;
 } */
 
-#gamefeaturesscroller{
+#gamefeaturesscroller {
     margin-top: 15vh;
     position: sticky;
     display: flex;
@@ -276,50 +259,45 @@ body {
 
 }
 
-#gfscrollerup{
+#gfscrollerup {
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
-#gfscrollerup img{
+#gfscrollerup img {
     position: sticky;
     width: 3vw;
     height: 10vh;
 }
 
-#gfscrollerline{
-   
+#gfscrollerline {
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1.3vw;
 }
 
-#gfscrollerline img{
+#gfscrollerline img {
     position: sticky;
     width: 0.2vw;
     height: 50vh;
 }
 
-#gfscrollerdown{
+#gfscrollerdown {
     display: flex;
     justify-content: center;
 }
 
-#gfscrollerdown img{
+#gfscrollerdown img {
     position: sticky;
     width: 3vw;
     height: 10vh;
 }
 
-<<<<<<< HEAD
-#emptyfeatures{
-    height: 10vw;
-=======
 #emptyfeatures {
-    height: 3vw;
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
+    height: 10vw;
 }
 
 #gamefeaturestitle {
@@ -606,13 +584,8 @@ body {
     color: #000000;
 }
 
-<<<<<<< HEAD
-#emptyspace{
-    height: 20vh;
-=======
 #emptyspace {
-    height: 70px;
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
+    height: 20vh;
 }
 
 #galleries {
@@ -727,13 +700,8 @@ body {
     height: 70px;
 }
 
-<<<<<<< HEAD
-#platforms{
-    height: 100vh;
-=======
 #platforms {
-    height: 700px;
->>>>>>> 35711589e31a9e47522b3696f1b07e1f3402733e
+    height: 100vh;
     display: grid;
     grid-template-rows: 1.1fr 0.7fr 0.3fr;
 }
