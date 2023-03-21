@@ -177,7 +177,7 @@
 #registerarea {
     background-image: url(assets/img/registerpage/registerareabg.png);
     width: 60%;
-    margin-left: 10vw;
+    margin-left: 11vw;
     margin-top: 10vh;
     display: flex;
     flex-direction: column;

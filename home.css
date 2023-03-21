@@ -221,10 +221,9 @@
     height: 65%;
 }
 
-.jumbotron-images img:not(:first-child) {
-    margin-left: 38%;
-    width: 2.5%;
-    height: 45%;
+.jumbotron-images a {
+    margin-left: 37.7%;
+    width: 25%;
 }
 
 .newchar {
