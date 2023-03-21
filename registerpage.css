@@ -166,12 +166,12 @@
 
 #welcome4 {
     margin-left: 1vw;
-    margin-top: 7.5vh;
+    margin-top: 8.5vh;
 }
 
 #welcome4 img {
-    width: 11vw;
-    height: 15vh;
+    width: 10vw;
+    height: 14vh;
 }
 
 #registerarea {
@@ -194,10 +194,8 @@
 #signuptitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45px;
     text-align: center;
+    font-weight: lighter;
     color: #FFFFFF;
 }
 
@@ -230,7 +228,7 @@
 #name {
     background: #FFFFFF;
     border-radius: 0.5vw;
-    border: 0.2vw solid plum;
+    border: 0.2vw solid #57578A;
     height: 6vh;
     width: 20vw;
 }
@@ -242,7 +240,7 @@
 #age {
     background: #FFFFFF;
     border-radius: 0.5vw;
-    border: 0.2vw solid plum;
+    border: 0.2vw solid #57578A;
     height: 6vh;
     width: 20vw;
 }
@@ -254,7 +252,7 @@
 #email {
     background: #FFFFFF;
     border-radius: 0.5vw;
-    border: 0.2vw solid plum;
+    border: 0.2vw solid #57578A;
     height: 6vh;
     width: 20vw;
 }
@@ -266,7 +264,7 @@
 #password {
     background: #FFFFFF;
     border-radius: 0.5vw;
-    border: 0.2vw solid plum;
+    border: 0.2vw solid #57578A;
     height: 6vh;
     width: 20vw;
 }
@@ -278,7 +276,7 @@
 #confirmpw {
     background: #FFFFFF;
     border-radius: 0.5vw;
-    border: 0.2vw solid plum;
+    border: 0.2vw solid #57578A;
     height: 6vh;
     width: 20vw;
 }
@@ -320,12 +318,74 @@
 }
 
 button {
+    background-color: #57578A;
+    color: white;
+    border: none;
     width: 10vw;
     height: 3vw;
 }
 
+.footer {
+    background-image: url(assets/img/home/footerbg.png);
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
 
-#footer {
-    background-image: url(assets/img/registerpage/footerbg.png);
-    height: 60vh;
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1vw;
+    width: 100%;
+    height: 30%;
+}
+
+.logo-nav img {
+    width: 11%;
+    height: 40%;
+}
+
+.footerNav {
+    display: flex;
+    gap: 1vw;
+    font-family: Tahoma;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #838383;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.5vw;
+    width: 100%;
+}
+
+.img-text img {
+    width: 12%;
+    height: 45%;
+}
+
+.img-text h5 {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: lighter;
+    color: #838383;
+}
+
+#cr {
+    color: white;
+}
+
+.img-text img:not(:first-child) {
+    width: 25%;
+    height: 50%;
 }

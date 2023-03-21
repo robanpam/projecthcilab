@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
 }
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
 
     background-image: url(assets/img/aboutus/background.webp);
     background-attachment: fixed;
@@ -17,83 +17,83 @@ body{
     background-repeat: no-repeat;
 }
 
-#header{
+#header {
     background-image: url(assets/img/aboutus/header.png);
     height: 110vh;
     background-size: 100% 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
-}  
 
-#text{
+}
+
+#text {
     display: flex;
     position: relative;
     justify-content: right;
 }
 
-#txtheader{
+#txtheader {
     width: 40vw;
     height: 32vh;
     position: absolute;
     right: 5em;
 }
 
-#overview{
+#overview {
     height: 106vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#featuresoview{
+#featuresoview {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#galoview{
+#galoview {
     display: grid;
     grid-template-rows: 1.2fr 0.9fr;
 }
 
-#galleriesoverview{
+#galleriesoverview {
     display: flex;
     justify-content: center;
     align-items: end;
     margin-bottom: 3vh;
 }
 
-#arrowdown{
+#arrowdown {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
 }
 
-#arrowdown img{
+#arrowdown img {
     width: 3vw;
     height: 12vh;
 }
 
-#platformoview{
+#platformoview {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#overview h1{
+#overview h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-/* identical to box height */
+    /* identical to box height */
 
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-#overview h1:hover{
+#overview h1:hover {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -102,7 +102,7 @@ color: #FFFFFF;
     text-shadow: 3px 1px 8px #6BD2D9;
 }
 
-#gamefeatures{
+#gamefeatures {
     /* position: fixed; */
     background-image: url(assets/img/aboutus/bggamefeature.png);
     background-size: 100% 100%;
@@ -112,18 +112,18 @@ color: #FFFFFF;
     background-attachment: fixed;
 }
 
-#emptyfeatures{
+#emptyfeatures {
     height: 3vw;
 }
 
-#gamefeaturestitle{
+#gamefeaturestitle {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 12vw;
 }
 
-#gamefeaturestitle h1{
+#gamefeaturestitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -134,26 +134,24 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#adventure{
+#adventure {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#adventureimage{
+#adventureimage {}
 
-}
-
-#adventureimage img{
+#adventureimage img {
     width: 70vw;
     height: 65vh;
 }
 
-#adventuretext{
+#adventuretext {
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
 
-#adventuretitle{
+#adventuretitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +159,7 @@ color: #FFFFFF;
     margin-right: 5vw;
 }
 
-#adventuretitle h1{
+#adventuretitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -172,12 +170,12 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#adventureexp{
+#adventureexp {
     display: flex;
     margin-right: 5vw;
 }
 
-#adventureexp h1{
+#adventureexp h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -188,23 +186,23 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#discover{
+#discover {
     margin-top: 2vw;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-#discoverimage img{
+#discoverimage img {
     width: 70vw;
     height: 65vh;
 }
 
-#discovertext{
+#discovertext {
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
 
-#discovertitle{
+#discovertitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +210,7 @@ color: #FFFFFF;
     margin-left: 5vw;
 }
 
-#discovertitle h1{
+#discovertitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -222,14 +220,14 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#discoverexp{
+#discoverexp {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-left: 5vw;
 }
 
-#discoverexp h1{
+#discoverexp h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -240,26 +238,24 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#travelfeatures{
+#travelfeatures {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#travelimage{
+#travelimage {}
 
-}
-
-#travelimage img{
+#travelimage img {
     width: 70vw;
     height: 65vh;
 }
 
-#traveltext{
+#traveltext {
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
 
-#traveltitle{
+#traveltitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +264,7 @@ color: #FFFFFF;
     margin-right: 5vw;
 }
 
-#traveltitle h1{
+#traveltitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -279,12 +275,12 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#travelexp{
+#travelexp {
     display: flex;
     margin-right: 5vw;
 }
 
-#travelexp h1{
+#travelexp h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -295,26 +291,24 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#masterfeatures{
+#masterfeatures {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-#masterimage{
+#masterimage {}
 
-}
-
-#masterimage img{
+#masterimage img {
     width: 70vw;
     height: 65vh;
 }
 
-#mastertext{
+#mastertext {
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
 
-#mastertitle{
+#mastertitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,7 +317,7 @@ color: #FFFFFF;
     margin-left: 5vw;
 }
 
-#mastertitle h1{
+#mastertitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -334,12 +328,12 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#masterexp{
+#masterexp {
     display: flex;
     margin-left: 5vw;
 }
 
-#masterexp h1{
+#masterexp h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -350,27 +344,27 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#buildfeatures{
+#buildfeatures {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#buildimage{
+#buildimage {
     width: 70vw;
     height: 65vh;
 }
 
-#buildimage img{
+#buildimage img {
     width: 70vw;
     height: 65vh;
 }
 
-#buildtext{
+#buildtext {
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
 
-#buildtitle{
+#buildtitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +373,7 @@ color: #FFFFFF;
     margin-right: 5vw;
 }
 
-#buildtitle h1{
+#buildtitle h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -390,12 +384,12 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#buildexp{
+#buildexp {
     display: flex;
     margin-right: 5vw;
 }
 
-#buildexp h1{
+#buildexp h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -406,11 +400,11 @@ color: #FFFFFF;
     color: #000000;
 }
 
-#emptyspace{
+#emptyspace {
     height: 70px;
 }
 
-#galleries{
+#galleries {
     background-image: url(assets/img/aboutus/backgroundgaleries.png);
     background-size: 100% 100%;
     height: 110vh;
@@ -418,13 +412,13 @@ color: #FFFFFF;
     grid-template-rows: 1fr 3fr;
 }
 
-#galleriestitle{
+#galleriestitle {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#galleriestitle h1{
+#galleriestitle h1 {
     text-align: center;
     font-family: 'Tahoma';
     font-style: normal;
@@ -433,72 +427,72 @@ color: #FFFFFF;
     line-height: 84px;
 }
 
-#galleriescontent{
+#galleriescontent {
     display: grid;
     grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
     margin-bottom: 7vh;
 }
 
-#photos{
+#photos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#linespace{
+#linespace {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 3vw;
 }
 
-#linespace img{
+#linespace img {
     height: 70vh;
 }
 
-#videos{
+#videos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 9vw;
 }
 
-#scroller{
+#scroller {
     display: grid;
     grid-template-rows: 0.25fr 1fr 0.25fr;
 }
 
-#scrollerup{
+#scrollerup {
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
-#scrollerup img{
+#scrollerup img {
     width: 3vw;
     height: 10vh;
 }
 
-#scrollerline{
+#scrollerline {
     display: flex;
     justify-content: center;
 }
 
-#scrollerline img{
+#scrollerline img {
     width: 0.2vw;
     height: 50vh;
 }
 
-#scrollerdown{
+#scrollerdown {
     display: flex;
     justify-content: center;
 }
 
-#scrollerdown img{
+#scrollerdown img {
     width: 3vw;
     height: 10vh;
 }
 
-#galleriescontent h1{
+#galleriescontent h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -508,7 +502,7 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
-#galleriescontent h1:hover{
+#galleriescontent h1:hover {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -518,40 +512,40 @@ color: #FFFFFF;
     transition: 500ms;
 }
 
-#emptyspace2{
+#emptyspace2 {
     height: 70px;
 }
 
-#platforms{
+#platforms {
     height: 700px;
     display: grid;
     grid-template-rows: 1.1fr 1fr 0.5fr;
 }
 
-#genshinlogo{
+#genshinlogo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#genshinlogo img{
+#genshinlogo img {
     width: 400px;
     height: 170px;
 }
 
-#platformstext{
+#platformstext {
     height: 150px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#ptext1{
+#ptext1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#ptext1 h1{
+#ptext1 h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
@@ -561,12 +555,12 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
-#ptext2{
+#ptext2 {
     display: flex;
     justify-content: center;
 }
 
-#ptext2 h1{
+#ptext2 h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
@@ -576,38 +570,98 @@ color: #FFFFFF;
     color: #0B0A0A;
 }
 
-#platformslogo{
+#platformslogo {
     display: flex;
     justify-content: center;
 }
 
-#pslogo:hover{
+#pslogo:hover {
     filter: drop-shadow(1px 2px 4px #6BD2D9);
 }
 
-#iOSlogo:hover{
+#iOSlogo:hover {
     filter: drop-shadow(1px 2px 4px #6BD2D9);
 }
 
-#androidlogo:hover{
+#androidlogo:hover {
     filter: drop-shadow(1px 2px 4px #6BD2D9);
 }
 
-#windowslogo:hover{
+#windowslogo:hover {
     filter: drop-shadow(1px 2px 4px #6BD2D9);
 }
 
-#platformsbuttonup{
+#platformsbuttonup {
     display: flex;
     justify-content: center;
 }
 
-#platformsbuttonup img{
+#platformsbuttonup img {
     width: 35px;
     height: 50px;
 }
 
-#footer{
-    background-image: url(assets/img/aboutus/footerbg.png);
-    height: 50vh;
+.footer {
+    background-image: url(assets/img/home/footerbg.png);
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1vw;
+    width: 100%;
+    height: 30%;
+}
+
+.logo-nav img {
+    width: 11%;
+    height: 40%;
+}
+
+.footerNav {
+    display: flex;
+    gap: 1vw;
+    font-family: Tahoma;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #838383;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.5vw;
+    width: 100%;
+}
+
+.img-text img {
+    width: 12%;
+    height: 45%;
+}
+
+.img-text h5 {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: lighter;
+    color: #838383;
+}
+
+#cr {
+    color: white;
+}
+
+.img-text img:not(:first-child) {
+    width: 25%;
+    height: 50%;
 }

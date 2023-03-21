@@ -259,7 +259,7 @@
     height: 54vh;
 }
 
-.newchar-char img {
+.newchar-char {
     position: absolute;
     top: 26%;
     left: 21%;
