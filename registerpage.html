@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="registerpage.css">
     <title>Register Page</title>
 </head>
+
 <body>
     <nav class="navbar" id="myNav">
         <div class="logo-menu">
@@ -14,14 +16,14 @@
                 <img src="assets/img/home/logo.png" alt="logo"></img>
             </div>
             <div class="menu">
-                <a href="index.html" class="active">HOME</a>
-                <a href="characters.html">CHARACTERS</a>
+                <a href="index.html">HOME</a>
+                <a href="charactersMainPage.html">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
                 <a href="about.html">ABOUT GAME</a>
             </div>
         </div>
         <div class="menu-button">
-            <a href="register.html">REGISTER</a>
+            <a href="registerpage.html" class="active">REGISTER</a>
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
@@ -34,7 +36,7 @@
             <div id="welcome1">
             </div>
             <div id="welcome2">
-                <img src="assets/img/registerpage/jenshinlogo.png" alt="">
+                <img src="assets/img/home/logo.png" alt="">
             </div>
             <div id="welcome3">
                 <div id="welcome31">
@@ -49,7 +51,7 @@
                 </div>
             </div>
             <div id="welcome4">
-                <img src="assets/img/registerpage/tw.png" alt="">
+                <img src="assets/img/home/tw.png" alt="">
             </div>
         </div>
         <div id="registerarea">
@@ -62,72 +64,49 @@
                 <form id="registerform">
                     <!-- Name -->
                     <div id="nameregister">
-                        <input 
-                        type="text"
-                        placeholder="Name"
-                        name="name"
-                        id="name" required>
+                        <input type="text" placeholder="Name" name="name" id="name" required>
                         <div id="nameerror" class="error">p</div>
                     </div>
                     <!-- Age -->
                     <div id="ageregister">
-                        <input 
-                        type="number"
-                        placeholder="Age"
-                        name="age"
-                        id="age" required>
+                        <input type="number" placeholder="Age" name="age" id="age" required>
                         <div id="ageerror" class="error">p</div>
                     </div>
                     <!-- Email -->
                     <div id="emailregister">
-                        <input 
-                        type="text"
-                        placeholder="Email"
-                        name="email" 
-                        id="email" required>
+                        <input type="email" placeholder="Email" name="email" id="email" required>
                         <div id="emailerror" class="error">p</div>
                     </div>
                     <!-- Password -->
                     <div id="passwordregister">
-                        <input 
-                        type="text" 
-                        placeholder="Password"
-                        name="password" 
-                        id="password" required>
+                        <input type="password" placeholder="Password" name="password" id="password" required>
                         <div id="passworderror" class="error">p</div>
                     </div>
                     <!-- Confirm Password -->
                     <div id="confirmpwregister">
-                        <input 
-                        type="text"
-                        placeholder="Confirm Password"
-                        name="confirmpw"
-                        id="confirmpw" required>
+                        <input type="password" placeholder="Confirm Password" name="confirmpw" id="confirmpw" required>
                         <div id="confirmpwerror" class="error"></div>
                     </div>
                     <!-- Agree Terms and Condition -->
                     <div id="agreeregister">
-                        <input 
-                        type="checkbox"
-                        name="checkbox"
-                        id="checkbox" required>
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
                         <label id="agreetext">
                             I have read and agree to the Terms of Service & Privacy Policy
                         </label>
-                        
+
                     </div>
                     <div id="forbutton">
                         <button type="submit">
                             Play for Free
-                       </button>
+                        </button>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
     </div>
-
     <div id="footer">
     </div>
 </body>
+
 </html>
