@@ -16,6 +16,11 @@
     src: url('zh-cn.ttf');
 }
 
+@font-face {
+    font-family: Inter;
+    src: url('Inter-ExtraLight.ttf');
+}
+
 .navbar {
     position: absolute;
     display: flex;
@@ -227,11 +232,15 @@
 }
 
 .newchar {
-    background-image: url(assets/img/home/sumeru2.jpg);
+    background-image: url(assets/img/home/sumeru1.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .newchar-title {
@@ -243,26 +252,46 @@
     font-family: genshin;
     font-size: 2em;
     width: 100%;
-    height: 46%;
-    z-index: 2;
+    height: 15%;
 }
 
 .newchar-title p span {
     font-size: 40px;
 }
 
-.newchar-char{
+.newchar-char {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 54vh;
+    height: 50%;
 }
 
-.newchar-char {
+.newchar-char img {
+    margin-right: 10%;
+    width: 45%;
+}
+
+.newchar-rating {
     position: absolute;
-    top: 26%;
-    left: 21%;
-    width: 47%;
-    height: 60%;
+    top: 37%;
+    left: 27%;
+    width: 25%;
+}
+
+.newchar-desc {
+    font-family: Inter;
+    color: #FEFCEA;
+    text-align: justify;
+    position: absolute;
+    top: 47%;
+    right: 19%;
+    width: 18%;
+}
+
+.newchar-change {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    width: 7%;
 }
