@@ -161,6 +161,7 @@
 .mondstadt:hover{
     background-image: url('assets/img/characterspage/mondstadthover.png');
     background-size: contain;
+    transition: all 0.2s;
 }
 
 .liyue {
@@ -175,6 +176,7 @@
 .liyue:hover{
     background-image: url('assets/img/characterspage/liyuehover.png');
     background-size: contain;
+    transition: all 0.2s;
 }
 
 .inazuma {
@@ -189,6 +191,7 @@
 .inazuma:hover{
     background-image: url('assets/img/characterspage/inazumahover.png');
     background-size: contain;
+    transition: all 0.2s;
 }
 
 .sumeru {
@@ -203,6 +206,7 @@
 .sumeru:hover{
     background-image: url('assets/img/characterspage/sumeruhover.png');
     background-size: contain;
+    transition: all 0.2s;
 }
 
 .footer {
