@@ -757,11 +757,11 @@ body {
     cursor: pointer;
 }
 
-/* #photos {
+#photos {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 #linespace {
     display: flex;
