@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="liyueMap.css">
+    <script src="https://kit.fontawesome.com/fcda8d5e00.js" crossorigin="anonymous"></script>
+    <title>Maps: Liyue</title>
+</head>
+
+<body>
+    <nav class="navbar" id="myNav">
+        <div class="logo-menu">
+            <div class="logo">
+                <img src="assets/img/home/logo.png" alt="logo"></img>
+            </div>
+            <div class="menu">
+                <a href="home.html">HOME</a>
+                <a href="charactersMainPage.html">CHARACTERS</a>
+                <a href="maps.html" class="active">MAPS</a>
+                <a href="about.html">ABOUT GAME</a>
+            </div>
+        </div>
+        <div class="menu-button">
+            <a href="registerpage.html">REGISTER</a>
+            <button
+                onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-caret-down"></i>
+        </a>
+    </nav>
+    <div class="content">
+        <div class="pics" id="harbor">
+            <img src="assets/img/maps//l/Harbor.png" alt="">
+        </div>
+        <div class="pics hidden" id="tianheng">
+            <img src="assets/img/maps/l/Mt. Tianheng.png" alt="">
+        </div>
+        <div class="pics hidden" id="dihuam">
+            <img src="assets/img/maps/l/Dihua Marsh.png" alt="">
+        </div>
+        <div class="pics hidden" id="wangshu">
+            <img src="assets/img/maps/l/Wangshu Inn.png" alt="">
+        </div>
+        <div class="pics hidden" id="qingce">
+            <img src="assets/img/maps/l/Qingce Village.png" alt="">
+        </div>
+        <div class="pics hidden" id="jueyun">
+            <img src="assets/img/maps/l/Jueyun Karst.png" alt="">
+        </div>
+        <p>Click to explore Liyue!</p>
+        <div class="char">
+            <img src="assets/img/maps/l/xingqiu.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo-nav">
+            <img src="assets/img/home/logoori.png" alt="">
+            <div class="footerNav">
+                <a href="home.html">Home</a>
+                <a href="charactersMainPage.html">Characters</a>
+                <a href="maps.html">Maps</a>
+                <a href="about.html">About Game</a>
+                <a href="registerpage.html">Register</a>
+            </div>
+        </div>
+        <div class="img-text">
+            <img src="assets/img/home/tw.png" alt="">
+            <p>
+            <h5>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony
+                Interactive Entertainment Inc.
+                Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks
+                and/or registered trademarks of Epic Games. All other trademarks are the property of their respective
+                owners.</h5>
+            </p>
+            <img src="assets/img/home/hoyoverse.png"
+                onclick="window.open('https://www.hoyoverse.com/en-us?utm_source=genshin&utm_medium=footer', '_blank');"
+                alt="">
+            <h5 id="cr">Copyright © COGNOSPHERE. All Rights Reserved.</h5>
+        </div>
+    </div>
+</body>
+
+<script src="liyueMap.js"></script>
+
+</html>

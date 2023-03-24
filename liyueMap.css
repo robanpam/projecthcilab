@@ -115,7 +115,7 @@
 }
 
 .content {
-    background-image: url('assets/img/maps/m/bg.png');
+    background-image: url('assets/img/maps/l/mtTianheng.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -141,9 +141,9 @@
 
 .char {
     position: absolute;
-    width: 25%;
-    top: 42%;
-    right: 8%;
+    width: 30%;
+    top: 45%;
+    right: 10%;
 }
 
 .footer {
