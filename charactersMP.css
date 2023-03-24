@@ -150,7 +150,7 @@
 }
 
 .mondstadt {
-    background-image: url('assets/img/characterspage/mondstadtbar.png');
+    background-image: url('assets/img/characterspage/mondstadtMP.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -165,7 +165,7 @@
 }
 
 .liyue {
-    background-image: url('assets/img/characterspage/liyuebar.png');
+    background-image: url('assets/img/characterspage/liyueMP.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -180,7 +180,7 @@
 }
 
 .inazuma {
-    background-image: url('assets/img/characterspage/inazumabar.png');
+    background-image: url('assets/img/characterspage/inazumaMP.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -195,7 +195,7 @@
 }
 
 .sumeru {
-    background-image: url('assets/img/characterspage/sumerubar.png');
+    background-image: url('assets/img/characterspage/sumeruMP.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
