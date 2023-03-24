@@ -133,11 +133,7 @@ body {
     }
 }
 
-<<<<<<< Updated upstream
-#header {
-=======
 #header{
->>>>>>> Stashed changes
     background-image: url(assets/img/aboutus/header.png);
     height: 110vh;
     background-size: 100% 100%;
@@ -183,22 +179,14 @@ body {
     margin-bottom: 3vh;
 }
 
-<<<<<<< Updated upstream
-#oviewscrolldown {
-=======
 #oviewscrolldown{
->>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
 }
 
-<<<<<<< Updated upstream
-#oviewscrolldown img {
-=======
 #oviewscrolldown img{
->>>>>>> Stashed changes
     width: 3vw;
     height: 10vh;
 }
@@ -230,11 +218,7 @@ body {
     text-shadow: 3px 1px 8px #6BD2D9;
 }
 
-<<<<<<< Updated upstream
-#gamefeatures {
-=======
 #gamefeatures{
->>>>>>> Stashed changes
     background-image: url(assets/img/aboutus/bggamefeature.png);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -244,14 +228,9 @@ body {
     grid-template-columns: 1.85fr 0.15fr; */
 }
 
-<<<<<<< Updated upstream
-#gamefeaturescontent {
-    height: 420vh;
-=======
 #gamefeaturescontent{
     /* height: 470vh; */
     height: 500vh;
->>>>>>> Stashed changes
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     position: relative;
@@ -264,10 +243,6 @@ body {
     border: 5px solid yellow   ;
 } */
 
-<<<<<<< Updated upstream
-#gamefeaturesscroller {
-    margin-top: 15vh;
-=======
 #gamefeaturesscroller{
     position: absolute;
     height: 100%;
@@ -276,7 +251,6 @@ body {
 
 #gamefeaturesscrollercontent {
     margin-top: 20vh;
->>>>>>> Stashed changes
     position: sticky;
     display: flex;
     justify-content: center;
@@ -327,11 +301,7 @@ body {
     height: 10vh;
 }
 
-<<<<<<< Updated upstream
-#emptyfeatures {
-=======
 #emptyfeatures{
->>>>>>> Stashed changes
     height: 10vw;
 }
 
@@ -619,11 +589,7 @@ body {
     color: #000000;
 }
 
-<<<<<<< Updated upstream
-#emptyspace {
-=======
 #emptyspace{
->>>>>>> Stashed changes
     height: 20vh;
 }
 
@@ -697,11 +663,84 @@ body {
     /* border: 1px solid white; */
     width: fit-content;
     height: fit-content;
+    position: relative;
 }
 
 .modal-content img {
     width: 65vw;
 }
+
+.slides{
+    width: 100%;
+    position: relative;
+  }
+  
+  .slides .slide{
+  }
+  
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  .slides .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+  }
+  
+  .slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,1);
+  }
+  
+  /* @keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+  }
+  
+  @media (max-width: 992px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 18px;
+      padding: 13px;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 12px;
+      padding: 7px;
+    }
+  }
+  
+  @media (max-width: 360px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 11px;
+      padding: 6px;
+    }
+  } */
 
 /* The Close Button */
 .close{
@@ -718,11 +757,11 @@ body {
     cursor: pointer;
 }
 
-#photos {
+/* #photos {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #linespace {
     display: flex;
@@ -801,11 +840,7 @@ body {
     height: 70px;
 }
 
-<<<<<<< Updated upstream
-#platforms {
-=======
 #platforms{
->>>>>>> Stashed changes
     height: 100vh;
     display: grid;
     grid-template-rows: 1.1fr 0.7fr 0.3fr;

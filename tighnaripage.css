@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/mondstadt.png);
+    background-image: url(assets/img/characterspage/sumerubg.webp);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;   
@@ -319,7 +319,7 @@ color: #FFFFFF;
 
 hover characters in mondstadt
 */
-text-shadow: 5px 5px 0px #0AE5F3;
+text-shadow: 5px 5px 0px #2FBD0C;
 }
 
 #charva{
@@ -340,7 +340,7 @@ color: #FFFFFF;
 }
 
 #chardesc{
-    background-image: url(assets/img/characterspage/mondstadtchardescbg.png);
+    background-image: url(assets/img/characterspage/sumeruchardescbg.png);
     margin: 2%;
     margin-left: 5vw;
     border-inline-color: white;
@@ -365,7 +365,7 @@ color: #FFFFFF;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 26px;
 
     color: #FFFFFF;
@@ -410,6 +410,7 @@ color: #FFFFFF;
 .charlist:hover{
     transform: scale(120%);
     transition: 100ms;
+    opacity: 1;
 }
 
 #charphoto{

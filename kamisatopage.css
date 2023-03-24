@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/mondstadt.png);
+    background-image: url(assets/img/characterspage/inazumabg.jpg);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;   
@@ -310,7 +310,7 @@ body{
     font-family: 'Tahoma';
 font-style: italic;
 font-weight: 80vw;
-font-size: 7vw;
+font-size: 4vw;
 /* font-line: */
 
 color: #FFFFFF;
@@ -319,7 +319,7 @@ color: #FFFFFF;
 
 hover characters in mondstadt
 */
-text-shadow: 5px 5px 0px #0AE5F3;
+text-shadow: 5px 5px 0px #E59AF8;
 }
 
 #charva{
@@ -340,7 +340,7 @@ color: #FFFFFF;
 }
 
 #chardesc{
-    background-image: url(assets/img/characterspage/mondstadtchardescbg.png);
+    background-image: url(assets/img/characterspage/inazumachardescbg.png);
     margin: 2%;
     margin-left: 5vw;
     border-inline-color: white;

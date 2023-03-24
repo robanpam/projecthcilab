@@ -5,12 +5,12 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/mondstadt.png);
-    background-size: 100%;
+    background-image: url(assets/img/characterspage/CharPageDesign.png);
+    background-size: cover;
     background-position: 50%;
-    background-attachment: fixed;
+    background-attachment: fixed;   
     background-repeat: no-repeat;
-    height: 170vh;
+    height: 150vh;
     display: grid;
     grid-template-rows: 1.5fr 0.5fr;
 }
@@ -101,30 +101,189 @@ body{
 #mainarea{
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.7fr;
+    grid-template-columns: 0.3fr 1.3fr 0.1fr;
+}
+
+#charbararea{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 100vh;
+    width: 20vw;
 }
 
 #charbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     margin-left: 2vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 30vh;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nation{
+    padding-top: 1vw;
+}
+
+#mondstadt{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#mondstadtbar{
+    width: 5vw;
+    height: 10vh;
+    opacity: 70%;
+}
+
+#mondstadt::after{
+    /* display: none; */
+    position: absolute;
+    content: "";
+    background-image: url(assets/img/characterspage/mondstadtafter.png);
+    width: 0;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+#mondstadtbar:hover{
+    opacity: 100%;
+}
+
+#mondstadt:hover::after{
+    /* display: block; */
+    width: 20vw;
+}
+
+#liyue{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#liyuebar{
+    width: 5vw;
+    height: 10vh;
+    opacity: 70%;
+}
+
+#liyuebar:hover{
+    opacity: 100%;
+}
+
+#liyue::after{
+    /* display: none; */
+    position: absolute;
+    content: "";
+    background-image: url(assets/img/characterspage/liyueafter.png);
+    width: 0;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+#liyue:hover::after{
+    /* display: block; */
+    width: 20vw;
+}
+
+#inazuma{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#inazumabar{
+    width: 5vw;
+    height: 10vh;
+    opacity: 70%;
+}
+
+#inazumabar:hover{
+    opacity: 100%;
+}
+
+#inazuma::after{
+    /* display: none; */
+    position: absolute;
+    content: "";
+    background-image: url(assets/img/characterspage/inazumaafter.png);
+    width: 0;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+#inazuma:hover::after{
+    /* display: block; */
+    width: 20vw;
+}
+
+#sumeru{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#sumerubar{
+    width: 5vw;
+    height: 10vh;
+    opacity: 70%;
+}
+
+#sumerubar:hover{
+    opacity: 100%;
+}
+
+#sumeru::after{
+    /* display: none; */
+    position: absolute;
+    content: "";
+    background-image: url(assets/img/characterspage/sumeruafter.png);
+    width: 0;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+#sumeru:hover::after{
+    /* display: block; */
+    width: 20vw;
+}
+
+
+.nationbar{
+    width: 4.5vw;
+    height: 10vh;
 }
 
 #charidentity{
+    z-index: 5;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    height: 100vh;
 }
 
 #charnation{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 10vh;
+    display: grid;
+    grid-template-rows: 0.8fr 0.2fr;
+    margin-top: 17vh;
     margin-left: 5vw;
+    margin-right: 10vw;
+    border-bottom-color: #FFFFFF;
+    border-bottom-width: 0.3vw;
+    border-bottom-style: solid;
 }
 
 #charnation h1{
+    font-size: 2vw;
     color: white;
 }
 
@@ -142,7 +301,7 @@ body{
 #charname h1{
     font-family: 'Tahoma';
 font-style: italic;
-font-weight: 800;
+font-weight: 80vw;
 font-size: 7vw;
 /* font-line: */
 
@@ -175,9 +334,21 @@ color: #FFFFFF;
 #chardesc{
     background-image: url(assets/img/characterspage/mondstadtchardescbg.png);
     margin: 2%;
+    margin-left: 5vw;
+    border-inline-color: white;
+    border-inline-width: 0.3vw;
+    border-inline-style:solid;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    border-start-end-radius: 2vw;
+    border-start-start-radius: 2vw;
+    border-inline-end-color:white;
+    border-inline-end-style:solid;
+    border-inline-end-width: 0.3vw;
 }
 
 #chardesc h1{
@@ -193,126 +364,60 @@ color: #FFFFFF;
 
 }
 
-#charquality{
-    background-image: url(assets/img/characterspage/qualitybg.png);
-    backdrop-filter: blur(1vw);
+#otherchar{
+    margin-top: 1vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    margin: 7%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#charrating{
-    display: grid;
-    grid-template-rows: 0.3fr 0.7fr;
-}
-
-#ratingtitle{
-    display: flex;
-    justify-content:center;
-    align-items:baseline;
-}
-
-#ratingtitle h1{
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1vw;
-    line-height: 26px;
-
-    color: #FFFFFF;
-}
-
-#ratingimage{
+#otherchartitle{
+    margin-left: 1vw;
+    margin-bottom: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#ratingimage img{
+#otherchartitle h1{
+    font-size: 1.3vw;
+    color: white;
+}
+
+#othercharslist{
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.charlist{
     width: 7vw;
-    height: 4vh;
+    height: 15vh;
 }
 
-#charvision{
-    display: grid;
-    grid-template-rows: 0.3fr 0.7fr;
+
+.charlist:hover{
+    transform: scale(120%);
+    transition: 100ms;
 }
-
-#visiontitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#visiontitle h1{
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1vw;
-    line-height: 26px;
-
-    color: #FFFFFF;
-}
-
-#visionimage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#visionimage img{
-    width: 3.5vw;
-    height: 7vh;
-}
-
-#charconstellation{
-    display: grid;
-    grid-template-rows: 0.3fr 0.7fr;
-}
-
-#constellationtitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#constellationtitle h1{
-
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1vw;
-    line-height: 26px;
-
-    color: #FFFFFF;
-}
-
-#constellationimage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#constellationimage img{
-    width: 5vw;
-    height: 10vh;
-}
-
 
 #charphoto{
     display: flex;
-    justify-content: flex-end;
+    justify-content: last baseline;
     align-items: last baseline;
-    margin-top: 12vh;
+    z-index: 2;
+    height: 100vh;
 }
 
-
+#charphoto img{
+    width: 40vw;
+    height: 45vw;
+}
 
 #footer{
     background-image: url(assets/img/characterspage/footerbg.png);
+    height: 50vh;
 }
