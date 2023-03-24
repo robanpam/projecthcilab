@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/mondstadt.png);
+    background-image: url(assets/img/characterspage/liyuegenshinbg.png);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;   
@@ -319,7 +319,7 @@ color: #FFFFFF;
 
 hover characters in mondstadt
 */
-text-shadow: 5px 5px 0px #0AE5F3;
+text-shadow: 5px 5px 0px #F7A151;
 }
 
 #charva{
@@ -340,7 +340,7 @@ color: #FFFFFF;
 }
 
 #chardesc{
-    background-image: url(assets/img/characterspage/mondstadtchardescbg.png);
+    background-image: url(assets/img/characterspage/liyuechardescbg.png);
     margin: 2%;
     margin-left: 5vw;
     border-inline-color: white;
@@ -365,7 +365,7 @@ color: #FFFFFF;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.3vw;
     line-height: 26px;
 
     color: #FFFFFF;
