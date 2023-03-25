@@ -135,10 +135,12 @@ body {
 
 #header{
     background-image: url(assets/img/aboutus/header.png);
-    height: 110vh;
-    background-size: 100% 100%;
+    height: calc(45vw + 20px);
+    background-size: contain;
+    /* width: calc(98vw + 9px); */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-repeat: no-repeat;
 
 }
 
@@ -149,14 +151,16 @@ body {
 }
 
 #txtheader {
-    width: 40vw;
-    height: 32vh;
-    position: absolute;
-    right: 5em;
+    margin-right: calc(1vw + 10px);
+    width: calc(31vw + 17px);
+    height: calc(12vw + 10px);
+    /* position: absolute;
+    right: 5em; */
 }
 
 #overview {
-    height: 106vh;
+    height: calc(50vw + 282px);
+    width: calc(95vw + 46px);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -165,6 +169,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: calc(30 + 30px);
 }
 
 #galoview {
@@ -176,7 +181,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
-    margin-bottom: 3vh;
+    margin-bottom: calc(3vw + 8px);
 }
 
 #oviewscrolldown{
@@ -197,12 +202,14 @@ body {
     align-items: center;
 }
 
+/* #gamefeaturestxt{
+    width: calc(23vw + 5px);
+} */
 #overview h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: calc(3vw + 6px);
     /* identical to box height */
 
 
@@ -213,8 +220,7 @@ body {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: calc(3vw + 6px);
     text-shadow: 3px 1px 8px #6BD2D9;
 }
 

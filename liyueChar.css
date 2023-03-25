@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/mondstadt.png);
+    background-image: url(assets/img/characterspage/liyuegenshinbg.png);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;   
@@ -273,7 +273,6 @@ body{
 }
 
 #charidentity{
-    z-index: 5;
     display: grid;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
     height: 100vh;
@@ -319,7 +318,7 @@ color: #FFFFFF;
 
 hover characters in mondstadt
 */
-text-shadow: 5px 5px 0px #0AE5F3;
+text-shadow: 5px 5px 0px #F7A151;
 }
 
 #charva{
@@ -340,7 +339,7 @@ color: #FFFFFF;
 }
 
 #chardesc{
-    background-image: url(assets/img/characterspage/mondstadtchardescbg.png);
+    background-image: url(assets/img/characterspage/liyuechardescbg.png);
     margin: 2%;
     margin-left: 5vw;
     border-inline-color: white;
@@ -365,7 +364,7 @@ color: #FFFFFF;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.3vw;
     line-height: 26px;
 
     color: #FFFFFF;
@@ -425,7 +424,68 @@ color: #FFFFFF;
     height: 45vw;
 }
 
-#footer{
-    background-image: url(assets/img/characterspage/footerbg.png);
-    height: 50vh;
+.footer {
+    background-image: url(assets/img/aboutus/footerbg.png);
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1vw;
+    width: 100%;
+    height: 30%;
+}
+
+.logo-nav img {
+    width: 11%;
+    height: 40%;
+}
+
+.footerNav {
+    display: flex;
+    gap: 1vw;
+    font-family: Tahoma;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #838383;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.5vw;
+    width: 100%;
+}
+
+.img-text img {
+    width: 12%;
+    height: 45%;
+}
+
+.img-text h5 {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: lighter;
+    color: #838383;
+}
+
+#cr {
+    color: white;
+}
+
+.img-text img:not(:first-child) {
+    width: 25%;
+    height: 50%;
 }

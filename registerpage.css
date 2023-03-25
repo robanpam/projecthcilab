@@ -147,8 +147,8 @@
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 49px;
+    font-size: calc(1vw + 15px);
+    /* line-height: 49px; */
     text-align: center;
     color: #FFFFFF;
 }
@@ -157,8 +157,8 @@
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 49px;
+    font-size: calc(1vw + 10px);
+    /* line-height: 49px; */
     text-align: center;
 
     color: #FFFFFF;
@@ -176,8 +176,8 @@
 
 #registerarea {
     background-image: url(assets/img/registerpage/registerareabg.png);
-    width: 60%;
-    margin-left: 11vw;
+    width: calc(25vw + 89px);
+    margin-left: calc(5vw + -12px);
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -214,6 +214,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 2vw;
+    width: calc(20vw + 76px);
 }
 
 .error {
@@ -229,8 +230,8 @@
     background: #FFFFFF;
     border-radius: 0.5vw;
     border: 0.2vw solid #57578A;
-    height: 6vh;
-    width: 20vw;
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #name::placeholder {
@@ -241,8 +242,8 @@
     background: #FFFFFF;
     border-radius: 0.5vw;
     border: 0.2vw solid #57578A;
-    height: 6vh;
-    width: 20vw;
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #age::placeholder {
@@ -253,8 +254,8 @@
     background: #FFFFFF;
     border-radius: 0.5vw;
     border: 0.2vw solid #57578A;
-    height: 6vh;
-    width: 20vw;
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #email::placeholder {
@@ -265,8 +266,8 @@
     background: #FFFFFF;
     border-radius: 0.5vw;
     border: 0.2vw solid #57578A;
-    height: 6vh;
-    width: 20vw;
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #password::placeholder {
@@ -277,31 +278,33 @@
     background: #FFFFFF;
     border-radius: 0.5vw;
     border: 0.2vw solid #57578A;
-    height: 6vh;
-    width: 20vw;
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #confirmpw::placeholder {
     padding-left: 1vw;
 }
 
-#checkbox {
-    margin-right: 1vw;
+#agreebox {
+    margin-right: calc(0.2vw + 15px);
 }
 
 #agreeregister {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
+    margin-top: calc(1vw + 5px);
+    height: calc(1vw + 20px);
+    width: calc(18vw + 76px);
 }
 
 #agreetext {
     font-family: 'Tahoma';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+    font-weight: 300;
+    font-size: calc(0.6vw + 8px);
+
     /* identical to box height, or 200% */
     color: #FFFFFF;
 }
@@ -318,11 +321,12 @@
 }
 
 button {
+    margin-top: calc(1vw + 5px);
     background-color: #57578A;
     color: white;
     border: none;
-    width: 10vw;
-    height: 3vw;
+    width: calc(10vw + 50px);
+    height: calc(2vw + 15px);
 }
 
 .footer {
