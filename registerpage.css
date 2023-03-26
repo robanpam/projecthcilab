@@ -320,7 +320,7 @@
     /* margin-bottom: 1vw; */
 }
 
-button {
+#forbutton button {
     margin-top: calc(1vw + 5px);
     background-color: #57578A;
     color: white;
