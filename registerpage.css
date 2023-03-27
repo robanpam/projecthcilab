@@ -222,7 +222,7 @@
     font-size: calc(0.7vw + 5px);
     height: 1vw;
     width: 20vw;
-    color: red;
+    color: white;
     /* border: 5px solid yellow; */
 }
 
@@ -320,7 +320,7 @@
     /* margin-bottom: 1vw; */
 }
 
-button {
+#forbutton button {
     margin-top: calc(1vw + 5px);
     background-color: #57578A;
     color: white;

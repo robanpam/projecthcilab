@@ -1,0 +1,16 @@
+Referensi Perancangan Design Prototype & Website
+
+1. Genshin Impact Official Site
+   https://genshin.hoyoverse.com/en/home
+
+2. Genshin Impact Promotional Site
+   https://genshin.hoyoverse.com/en
+
+3. Genshin Impact Wiki | Fandom
+   https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki
+
+4. Genshin Impact Sign Up Page
+   https://genshin.hoyoverse.com/pc-launcher
+
+5. Password Validation (Check Number)
+   https://www.tutorialspoint.com/How-to-check-whether-a-value-is-a-number-in-JavaScript

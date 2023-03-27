@@ -13,35 +13,59 @@ const cfpwerror = document.getElementById("confirmpwerror")
 
 var flag = 0
 
-registerform.addEventListener("submit",(e)=>{
+registerform.addEventListener("submit", (e) => {
     e.preventDefault()
     flag = 0
 
-    if(username.value.length < 5 ){
-        namaerror.innerHTML = "Name must be at least 5 characters"
+    if (username.value.length < 5) {
+        namaerror.innerHTML = "Name must be at least 5 characters."
+        username.value = ""
         flag = 1
     }
 
-    if(age.value < 12){
-        ageerror.innerHTML = "You must be over 12 years old"
-        flag = 1
-    }
-    
-    if(!email.value.includes("@gmail.com")){
-        emailerror.innerHTML = "Email must be gmail.com"
+    if (age.value < 12) {
+        ageerror.innerHTML = "You must be over 12 years old."
+        age.value = ""
         flag = 1
     }
 
-    if(confirmpw != password){
-        cfpwerror.innerHTML = "Different password"
-    }
-
-    if(!agreebox.checked){
+    if (!email.value.includes("@gmail.com")) {
+        emailerror.innerHTML = "Email must include '@gmail.com'."
+        email.value = ""
         flag = 1
     }
-    
-    if (flag == 0) { 
-        window.location = "home.html" 
-      } else { 
-      } 
+
+    if (confirmpw.value != password.value) {
+        cfpwerror.innerHTML = "Different password!"
+        confirmpw.value = ""
+        flag = 1
+    }
+
+    if (password.value.length < 8) {
+        pwerror.innerHTML = "Password must be at least 8 characters."
+        password.value = ""
+        confirmpw.value = ""
+        flag = 1
+    }
+
+    var number
+    for(var i=0;i<password.value.length;i++){
+        var c = password.value.charAt(i)
+        if(!isNaN(c)) number = 1
+    }
+    if (number != 1) {
+        pwerror.innerHTML = "Password must include digit."
+        password.value = ""
+        confirmpw.value = ""
+        flag = 1
+    }
+
+    if (!agreebox.checked) {
+        flag = 1
+    }
+
+    if (flag == 0) {
+        window.location = "home.html"
+    } else {
+    }
 })
