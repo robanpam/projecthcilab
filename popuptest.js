@@ -1,15 +1,10 @@
 setTimeout(() => {
     var modal = document.getElementById("photoModal");
     var photobtn = document.getElementById("photoBtn");
+    var span0 = document.getElementsByClassName("close")[0];
     var span = document.getElementsByClassName("close")[1];
     var modal1 = document.getElementById("videoModal");
     var videobtn = document.getElementById("videoBtn");
-
-    console.log(modal)
-    console.log(photobtn)
-    console.log(span)
-    console.log(modal1)
-    console.log(videobtn)
     
     photobtn.onclick = function(){
         modal.style.display = "block";
@@ -19,7 +14,7 @@ setTimeout(() => {
         modal1.style.display = "block"
     }
     
-    span.onclick = function(){
+    span0.onclick = function(){
         modal.style.display = "none";
     }
 
@@ -39,27 +34,27 @@ setTimeout(() => {
 }, 500);
 
 var slideIndex = 1;
-      showSlides(slideIndex);
+showSlides(slideIndex);
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
 
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        if (n > slides.length)
-        {
-          slideIndex = 1;
-        }
-        if (n < 1)
-        {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex-1].style.display = "block";
-      }
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("slide");
+if (n > slides.length)
+{
+  slideIndex = 1;
+}
+if (n < 1)
+{
+  slideIndex = slides.length
+}
+for (i = 0; i < slides.length; i++)
+{
+  slides[i].style.display = "none";
+}
+slides[slideIndex-1].style.display = "block";
+}
       
