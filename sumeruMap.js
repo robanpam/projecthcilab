@@ -1,3 +1,12 @@
+function showNavbar() {
+    var x = document.getElementById("myNav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+
 let div1 = document.querySelector("#gandharva")
 let div2 = document.querySelector("#pardis")
 let div3 = document.querySelector("#caravan")

@@ -7,11 +7,6 @@
 }
 
 @font-face {
-    font-family: Tahoma;
-    src: url('Tahoma Regular font.ttf');
-}
-
-@font-face {
     font-family: genshin;
     src: url('zh-cn.ttf');
 }
@@ -21,13 +16,16 @@
     display: flex;
     background-color: rgba(60, 53, 59, 0.5);
     justify-content: space-between;
-    /* padding: 2%; */
     width: 100%;
     height: 10%;
     z-index: 5;
     font-family: Tahoma;
     font-style: normal;
     overflow: hidden;
+}
+
+.logo {
+    width: 9rem;
 }
 
 .logo img {
@@ -99,23 +97,8 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar a {
-        display: none;
-    }
-
-    .navbar button {
-        display: none;
-    }
-
-    .navbar a.icon {
-        float: right;
-        display: block;
-    }
-}
-
 .content {
-    background-image: url('assets/img/maps/s/devantakaMountain.jpg');
+    background-image: url('https://github.com/robanpam/projecthcilab/blob/main/assets/img/maps/s/devantakaMountain.jpg?raw=true');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -147,11 +130,10 @@
 }
 
 .footer {
-    background-image: url(assets/img/home/footerbg.png);
+    background-image: url('https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/footerbg.png?raw=true');
     position: relative;
     width: 100%;
     height: 65vh;
-    z-index: 2;
 }
 
 .logo-nav {
@@ -159,14 +141,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: 1vw;
+    row-gap: 0.5vw;
     width: 100%;
     height: 30%;
 }
 
 .logo-nav img {
     width: 11%;
-    height: 40%;
+    height: auto;
 }
 
 .footerNav {
@@ -191,7 +173,7 @@
 
 .img-text img {
     width: 12%;
-    height: 45%;
+    height: auto;
 }
 
 .img-text h5 {
@@ -210,4 +192,116 @@
 .img-text img:not(:first-child) {
     width: 25%;
     height: 50%;
+}
+
+@media screen and (max-width: 376px) {
+
+    .logo img {
+        width: 80%;
+    }
+
+    .pics {
+        margin-top: 10%;
+    }
+
+    .char {
+        display: none;
+    }
+
+    .content p {
+        font-size: 0.75em;
+    }
+
+    .logo-nav img {
+        width: 20%;
+    }
+
+    .img-text img {
+        width: 20%;
+    }
+
+    .img-text h5 {
+        width: 70%;
+        font-size: 70%;
+    }
+
+    .footerNav {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .navbar {
+        position: fixed;
+        overflow: visible;
+        align-items: center;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button a {
+        display: flex;
+        position: absolute;
+        align-items: end;
+    }
+
+    .menu-button button {
+        display: none;
+    }
+
+    .navbar a.icon {
+        padding: 3%;
+        color: white;
+        display: block;
+    }
+
+    .menu.responsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: end;
+        gap: 10px;
+        right: 2rem;
+        top: 5rem;
+        z-index: 10;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+    .logo img {
+        width: 80%;
+    }
+
+    .content {
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .pics {
+        margin-top: 5%;
+        width: 60%;
+        z-index: 3;
+    }
+
+    .char {
+        position: absolute;
+        width: 40%;
+        top: 67%;
+        right: 0%;
+    }
+
+    .content p {
+        font-size: 0.75em;
+    }
 }
