@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/img/characterspage/sumerubg.webp);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumerubg.webp?raw=true);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;   
@@ -149,7 +149,7 @@ body{
     /* display: none; */
     position: absolute;
     content: "";
-    background-image: url(assets/img/characterspage/mondstadtafter.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtafter.png?raw=true);
     width: 0;
     height: 5vh;
     transition: 0.5s;
@@ -187,7 +187,7 @@ body{
     /* display: none; */
     position: absolute;
     content: "";
-    background-image: url(assets/img/characterspage/liyueafter.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyueafter.png?raw=true);
     width: 0;
     height: 5vh;
     transition: 0.5s;
@@ -221,7 +221,7 @@ body{
     /* display: none; */
     position: absolute;
     content: "";
-    background-image: url(assets/img/characterspage/inazumaafter.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumaafter.png?raw=true);
     width: 0;
     height: 5vh;
     transition: 0.5s;
@@ -255,7 +255,7 @@ body{
     /* display: none; */
     position: absolute;
     content: "";
-    background-image: url(assets/img/characterspage/sumeruafter.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruafter.png?raw=true);
     width: 0;
     height: 5vh;
     transition: 0.5s;
@@ -339,7 +339,7 @@ color: #FFFFFF;
 }
 
 #chardesc{
-    background-image: url(assets/img/characterspage/sumeruchardescbg.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
     margin: 2%;
     margin-left: 5vw;
     border-inline-color: white;
@@ -426,7 +426,7 @@ color: #FFFFFF;
 }
 
 .footer {
-    background-image: url(assets/img/aboutus/footerbg.png);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/footerbg.png?raw=true);
     background-color: black;
     position: relative;
     width: 100%;
