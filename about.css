@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;s
   }
   
   html {
@@ -22,6 +23,7 @@
     justify-content: space-between;
     /* padding: 2%; */
     width: 100%;
+    /* width: calc(95vw + 46px); */
     height: 10%;
     z-index: 5;
     font-family: Tahoma;
@@ -133,12 +135,14 @@
   
   #header {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/header.png?raw=true);
-    height: calc(45vw + 20px);
+    height: calc(45vw + 30px);
     background-size: cover;
-    /* width: calc(98vw + 9px); */
+    /* width: calc(95vw + 46px); */
+    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
   }
   
   #text {
@@ -157,7 +161,8 @@
   
   #overview {
     height: calc(50vw + 189px);
-    width: calc(95vw + 46px);
+    /* width: calc(95vw + 46px); */
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -170,16 +175,18 @@
   }
   
   #galoview {
-    display: grid;
-    grid-template-rows: 1.2fr 0.9fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(30 + 30px);
   }
   
-  #galleriesoverview {
+  /* #galleriesoverview {
     display: flex;
     justify-content: center;
     align-items: end;
     margin-bottom: calc(3vw + 8px);
-  }
+  } */
   
   #oviewscrolldown {
     display: flex;
@@ -225,16 +232,22 @@
   #gamefeatures {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/bggamefeature.png?raw=true);
     background-size: cover;
+    /* background-repeat: ; */
     background-attachment: fixed;
     position: relative;
     height: fit-content;
+    /* width: calc(95vw + 46px); */
+    width: 100%;
+    /* width: calc(97vw + 40px); */
     /* display: grid;
       grid-template-columns: 1.85fr 0.15fr; */
   }
   
   #gamefeaturescontent {
     /* height: 470vh; */
-    height: 500vh;
+    /* width: fit-content; */
+    width: 100%;
+    height: fit-content;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     position: relative;
@@ -249,12 +262,13 @@
   
   #gamefeaturesscroller {
     position: absolute;
+    width: calc(0vw + 5px);
     height: 100%;
     right: 0;
   }
   
   #gamefeaturesscrollercontent {
-    margin-top: 20vh;
+    margin-top: 10vh;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -263,7 +277,7 @@
     z-index: 100;
     top: 15%;
     bottom: 20%;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     margin-right: 2vw;
     /* border: 5px solid green; */
   }
@@ -305,15 +319,19 @@
   }
   
   #emptyfeatures {
-    height: 10vw;
+    height: calc(2vw + 10px);
+    width: 100%;
+    /* border: 5px solid gray; */
+    /* width: calc(2vw + 10px); */
   }
   
   #gamefeaturestitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(15vw + 21px);
-    width: calc(97vw + 20px);
+    width: 100%;
+    /* height: calc(15vw + 21px);
+    width: calc(97vw + 20px); */
   }
   
   #gamefeaturestitle h1 {
@@ -327,38 +345,47 @@
     color: #000000;
   }
   
-  #adventure {
+  #adventurefeatures {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    /* width: calc(96vw + 25px); */
+    width: 100%;
+    height: calc(35vw + 20px);
+    /* border: 5px solid blue; */
   }
   
-  #adventureimage {
+  #adventureimage{
+    display: flex;
+    justify-content: flex-start;
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #adventureimage img {
-    width: 70vw;
-    height: 65vh;
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #adventuretext {
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 1fr;
   }
   
   #adventuretitle {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 5vw;
-    margin-right: 5vw;
+    /* margin-right: 5vw; */
   }
   
   #adventuretitle h1 {
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: calc(2vw + 4px);
+    /* line-height: 36px; */
     text-align: center;
   
     color: #000000;
@@ -373,22 +400,30 @@
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: calc(1vw + 2px);
+    /* line-height: 24px; */
     text-align: center;
   
     color: #000000;
   }
   
-  #discover {
-    margin-top: 2vw;
+  #discoverfeatures{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    /* width: calc(96vw + 25px); */
+    width: 100%;
+    height: calc(35vw + 20px);
+    /* border: 5px solid blue; */
+  }
+
+  #discoverimage{
+    display: flex;
+    justify-content: flex-end;
   }
   
   #discoverimage img {
-    width: 70vw;
-    height: 65vh;
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #discovertext {
@@ -400,33 +435,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 5vw;
-    margin-left: 5vw;
+    margin-right: 5vw;
   }
   
   #discovertitle h1 {
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: calc(2vw + 4px);
+    /* line-height: 36px; */
+    text-align: center;
   
     color: #000000;
   }
   
   #discoverexp {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 5vw;
+    margin-right: 5vw;
   }
   
   #discoverexp h1 {
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: calc(1vw + 2px);
+    /* line-height: 24px; */
     text-align: center;
   
     color: #000000;
@@ -435,14 +470,20 @@
   #travelfeatures {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    /* width: calc(96vw + 25px); */
+    width: 100%;
+    height: calc(35vw + 20px);
+    /* border: 5px solid blue; */
   }
   
   #travelimage {
+    display: flex;
+    justify-content: flex-start;
   }
   
   #travelimage img {
-    width: 70vw;
-    height: 65vh;
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #traveltext {
@@ -463,14 +504,14 @@
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: calc(2vw + 4px);
+    /* line-height: 36px; */
     text-align: center;
   
     color: #000000;
   }
   
-  #travelexp {
+  #traveldexp {
     display: flex;
     margin-right: 5vw;
   }
@@ -479,8 +520,8 @@
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: calc(1vw + 2px);
+    /* line-height: 24px; */
     text-align: center;
   
     color: #000000;
@@ -488,20 +529,27 @@
   
   #masterfeatures {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    /* width: calc(96vw + 25px); */
+    width: 100%;
+    height: calc(35vw + 20px);
+    /* border: 5px solid blue; */
   }
   
   #masterimage {
+    display: flex;
+    justify-content: flex-end;
   }
   
   #masterimage img {
-    width: 70vw;
-    height: 65vh;
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #mastertext {
     display: grid;
     grid-template-rows: 2fr 2fr;
+    margin-left: 3vw;
   }
   
   #mastertitle {
@@ -510,15 +558,15 @@
     align-items: center;
     text-align: center;
     margin-top: 5vw;
-    margin-left: 5vw;
+    margin-right: 5vw;
   }
   
   #mastertitle h1 {
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: calc(2vw + 4px);
+    /* line-height: 36px; */
     text-align: center;
   
     color: #000000;
@@ -526,15 +574,15 @@
   
   #masterexp {
     display: flex;
-    margin-left: 5vw;
+    margin-right: 5vw;
   }
   
   #masterexp h1 {
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: calc(1vw + 2px);
+    /* line-height: 24px; */
     text-align: center;
   
     color: #000000;
@@ -543,17 +591,20 @@
   #buildfeatures {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 1vw;
+    /* width: calc(96vw + 25px); */
+    width: 100%;
+    height: calc(35vw + 20px);
+    /* border: 5px solid blue; */
   }
   
-  #buildimage {
-    width: 70vw;
-    height: 65vh;
+  #buildimage{
+    display: flex;
+    justify-content: flex-start;
   }
   
   #buildimage img {
-    width: 70vw;
-    height: calc(32vw + 15px);
+    width: calc(57vw + 20px);
+    height: calc(30vw + 10px);
   }
   
   #buildtext {
@@ -599,12 +650,15 @@
   
   #emptyspace {
     height: 20vh;
+    /* border: 5px solid white; */
   }
   
   #galleries {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/backgroundgaleries.png?raw=true);
     background-size: cover;
     height: calc(47vw + 23px);
+    /* width: calc(95vw + 46px); */
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr 3fr;
   }
@@ -632,7 +686,7 @@
     display: grid;
     grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
     /* margin-bottom: 7vh; */
-    height: calc(43vw + 9px);
+    height: calc(44vw + 9px);
     /* border: 5px solid palegreen; */
   }
   
@@ -678,10 +732,11 @@
     width: fit-content;
     height: fit-content;
     position: relative;
+    /* overflow: hidden; */
   }
   
   .modal-content img {
-    width: 65vw;
+    width: calc(30vw + 20px);
   }
   
   .slides {
@@ -725,16 +780,16 @@
     background: rgba(0, 0, 0, 1);
   }
   
-  /* @keyframes fade {
+  @keyframes fade {
       from{opacity: 0.3}
       to {opacity: 1}
     }
     
-    @media (max-width: 992px){
+    /* @media (max-width: 992px){
       .slides .navigation .prev, .slides .navigation .next{
         font-size: 18px;
         padding: 13px;
-      }
+      } */
     }
     
     @media (max-width: 768px){
@@ -756,7 +811,7 @@
         font-size: 11px;
         padding: 6px;
       }
-    } */
+    }
   
   /* The Close Button */
   .close {
@@ -877,6 +932,8 @@
     height: calc(33vw + 199px);
     /* border: 5px solid purple; */
     display: grid;
+    /* width: calc(95vw + 46px); */
+    width: 100%;
     grid-template-rows: 0.5fr 0.7fr 0.3fr;
   }
   
