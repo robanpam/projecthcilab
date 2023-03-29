@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="liyueChar.css">
+    <script src="https://kit.fontawesome.com/fcda8d5e00.js" crossorigin="anonymous"></script>
     <title>Xiao Page</title>
 </head>
+
 <body>
-    <nav class="navbar" id="myNav">
+    <nav class="navbar">
         <div class="logo-menu">
             <div class="logo">
-                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true" alt="logo"></img>
+                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true"
+                    alt="logo"></img>
             </div>
-            <div class="menu">
+            <div class="menu" id="myNav">
                 <a href="home.html">HOME</a>
                 <a href="charactersMainPage.html" class="active">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
@@ -25,8 +29,8 @@
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa-regular fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" id="burger" onclick="showNavbar()">
+            <i class="fa fa-bars"></i>
         </a>
     </nav>
     <!-- Main Area -->
@@ -39,25 +43,29 @@
                 <!-- Mondstadt -->
                 <div id="mondstadt" class="nation">
                     <a href="jeanpage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtbar.png?raw=true" id="mondstadtbar" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtbar.png?raw=true"
+                            id="mondstadtbar" alt="">
                     </a>
                 </div>
                 <!-- Liyue -->
                 <div id="liyue" class="nation">
                     <a href="xiaopage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuebar.png?raw=true" id="liyuebar" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuebar.png?raw=true"
+                            id="liyuebar" alt="">
                     </a>
                 </div>
                 <!-- Inazuma -->
                 <div id="inazuma" class="nation">
                     <a href="kamisatopage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumabar.png?raw=true" id="inazumabar" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumabar.png?raw=true"
+                            id="inazumabar" alt="">
                     </a>
                 </div>
                 <!-- Sumeru -->
                 <div id="sumeru" class="nation">
                     <a href="tighnaripage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumerubar.png?raw=true" id="sumerubar" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumerubar.png?raw=true"
+                            id="sumerubar" alt="">
                     </a>
                 </div>
             </div>
@@ -67,9 +75,9 @@
         <div id="charidentity">
             <!-- Char Nation -->
             <div id="charnation">
-                    <h1>
-                        Liyue
-                    </h1>
+                <h1>
+                    Liyue
+                </h1>
             </div>
             <!-- Char Name & VA -->
             <div id="charnameva">
@@ -89,8 +97,9 @@
             <!-- Char Description -->
             <div id="chardesc">
                 <h1>
-                    Despite his youthful appearance, tales of 
-his exploits have been documented for millennia. This is because it tastes just like the sweet dreams he used to devour.
+                    Despite his youthful appearance, tales of
+                    his exploits have been documented for millennia. This is because it tastes just like the sweet
+                    dreams he used to devour.
                 </h1>
             </div>
             <!-- Other Char -->
@@ -104,23 +113,28 @@ his exploits have been documented for millennia. This is because it tastes just 
                 <!-- Other Chars -->
                 <div id="othercharslist">
                     <a href="xiaopage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xiaoprofile.png?raw=true" class="charlist" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xiaoprofile.png?raw=true"
+                            class="charlist" alt="">
                     </a>
                     <a href="beidoupage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/beidouprofile.png?raw=true" class="charlist" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/beidouprofile.png?raw=true"
+                            class="charlist" alt="">
                     </a>
                     <a href="xingqiupage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xingqiuprofile.png?raw=true" class="charlist" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xingqiuprofile.png?raw=true"
+                            class="charlist" alt="">
                     </a>
                     <a href="keqingpage.html">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/keqingprofile.png?raw=true" class="charlist" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/keqingprofile.png?raw=true"
+                            class="charlist" alt="">
                     </a>
                 </div>
             </div>
         </div>
         <!-- Character Photo -->
         <div id="charphoto">
-            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xiaophoto.png?raw=true" alt="">
+            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/xiaophoto.png?raw=true"
+                alt="">
         </div>
     </div>
     <!-- Footer -->
@@ -151,4 +165,7 @@ his exploits have been documented for millennia. This is because it tastes just 
         </div>
     </div>
 </body>
+
+<script src="home.js"></script>
+
 </html>

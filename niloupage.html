@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sumeruChar.css">
+    <script src="https://kit.fontawesome.com/fcda8d5e00.js" crossorigin="anonymous"></script>
     <title>Nilou Page</title>
 </head>
 <body>
-    <nav class="navbar" id="myNav">
+    <nav class="navbar">
         <div class="logo-menu">
             <div class="logo">
-                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true" alt="logo"></img>
+                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true"
+                    alt="logo"></img>
             </div>
-            <div class="menu">
+            <div class="menu" id="myNav">
                 <a href="home.html">HOME</a>
                 <a href="charactersMainPage.html" class="active">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
@@ -25,8 +27,8 @@
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa-regular fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" id="burger" onclick="showNavbar()">
+            <i class="fa fa-bars"></i>
         </a>
     </nav>
     <!-- Main Area -->
@@ -154,4 +156,7 @@ innocent and radiant smile.
         </div>
     </div>
 </body>
+
+<script src="home.js"></script>
+
 </html>
