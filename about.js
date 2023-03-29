@@ -1,3 +1,12 @@
+function showNavbar() {
+    var x = document.getElementById("myNav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+
 setTimeout(() => {
     var modal = document.getElementById("photoModal");
     var photobtn = document.getElementById("photoBtn");

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <!-- <link rel="stylesheet" href="popuptest.css"> -->
+    <script src="https://kit.fontawesome.com/fcda8d5e00.js" crossorigin="anonymous"></script>
     <script src="about.js"></script>
     <title>About Page</title>
 </head>
@@ -14,16 +14,16 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar" id="myNav">
+    <nav class="navbar">
         <div class="logo-menu">
             <div class="logo">
                 <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true" alt="logo"></img>
             </div>
-            <div class="menu">
+            <div class="menu" id="myNav">
                 <a href="home.html">HOME</a>
                 <a href="charactersMainPage.html">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
-                <a href="about.html" class="active">ABOUT GAME</a>
+                <a href="about.html"  class="active">ABOUT GAME</a>
             </div>
         </div>
         <div class="menu-button">
@@ -31,8 +31,8 @@
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa-regular fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" id="burger" onclick="showNavbar()">
+            <i class="fa fa-bars"></i>
         </a>
     </nav>
 
@@ -40,7 +40,8 @@
     <div id="header">
         <div id="empty"></div>
         <div id="text">
-            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/txtheader.png?raw=true" id="txtheader">
+            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/txtheader.png?raw=true"
+                id="txtheader">
         </div>
         <div id="empty"></div>
     </div>
@@ -57,11 +58,11 @@
         </div>
         <!-- Galleries Overview -->
         <div id="galoview">
-                <a href="#galleries" style="text-decoration: none;">
-                    <h1>
-                        Galleries
-                    </h1>
-                </a>
+            <a href="#galleries" style="text-decoration: none;">
+                <h1>
+                    Galleries
+                </h1>
+            </a>
         </div>
         <!-- PlatformsOverview -->
         <div id="platformoview">
@@ -75,20 +76,23 @@
 
     <!-- Game Features -->
     <div id="gamefeatures">
-        
+
         <div id="gamefeaturesscroller">
             <div id="gamefeaturesscrollercontent">
                 <div id="gfscrollerup">
                     <a href="#overview">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerup.png?raw=true" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerup.png?raw=true"
+                            alt="">
                     </a>
                 </div>
                 <div id="gfscrollerline">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerline.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerline.png?raw=true"
+                        alt="">
                 </div>
                 <div id="gfscrollerdown">
                     <a href="#galleries">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerdown.png?raw=true" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerdown.png?raw=true"
+                            alt="">
                     </a>
                 </div>
             </div>
@@ -98,18 +102,19 @@
             <!-- Game Features Title Area -->
             <div id="gamefeaturestitle">
                 <h1>
-                    Game Features 
+                    Game Features
                 </h1>
             </div>
             <!-- Adventure Feature -->
             <div id="adventurefeatures">
                 <!-- Adventure Image -->
                 <div id="adventureimage">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/adventure.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/adventure.png?raw=true"
+                        alt="">
                 </div>
                 <!-- Adventure Text -->
                 <div id="adventuretext">
-<div id="adventuretitle">
+                    <div id="adventuretitle">
                         <h1>
                             An Epic Fantasy Adventure
                         </h1>
@@ -146,7 +151,8 @@
                 </div>
                 <!-- Discover Image -->
                 <div id="discoverimage">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/world.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/world.png?raw=true"
+                        alt="">
                 </div>
             </div>
             <div id="emptyfeatures"></div>
@@ -155,7 +161,8 @@
             <div id="travelfeatures">
                 <!-- Travel Image -->
                 <div id="travelimage">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/travel.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/travel.png?raw=true"
+                        alt="">
                 </div>
                 <!-- Travel Text -->
                 <div id="traveltext">
@@ -198,7 +205,8 @@
                 </div>
                 <!-- Master Image -->
                 <div id="masterimage">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/master.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/master.png?raw=true"
+                        alt="">
                 </div>
             </div>
             <div id="emptyfeatures"></div>
@@ -207,9 +215,10 @@
             <div id="buildfeatures">
                 <!-- Build Image -->
                 <div id="buildimage">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/build.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/build.png?raw=true"
+                        alt="">
                 </div>
-<!-- Build Text -->
+                <!-- Build Text -->
                 <div id="buildtext">
                     <div id="buildtitle">
                         <h1>
@@ -261,30 +270,36 @@
                         <!-- Infinite Autoplay Slideshow Carousel -->
                         <div class="slides">
                             <div class="slide">
-                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo1.png?raw=true" alt="">
+                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo1.png?raw=true"
+                                    alt="">
                             </div>
                             <div class="slide">
-                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo2.png?raw=true" alt="">
+                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo2.png?raw=true"
+                                    alt="">
                             </div>
                             <div class="slide">
-                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo3.png?raw=true" alt="">
+                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo3.png?raw=true"
+                                    alt="">
                             </div>
                             <div class="slide">
-                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo4.png?raw=true" alt="">
+                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo4.png?raw=true"
+                                    alt="">
                             </div>
                             <div class="slide">
-                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo5.png?raw=true" alt="">
+                                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/photo5.png?raw=true"
+                                    alt="">
                             </div>
                             <div class="navigation">
-                                <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-                                <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(-1)">&#10095;</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="linespace">
-                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/linespace.png?raw=true" alt="">
+                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/linespace.png?raw=true"
+                    alt="">
             </div>
             <div id="videos">
                 <!-- Trigger -->
@@ -297,7 +312,10 @@
                     <div class="modal-content">
                         <span class="close" id="closeVideoModal">&times;</span>
                         <br>
-                        <iframe width="800" height="500" src="https://www.youtube.com/embed/HnElxo1lghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="800" height="500" src="https://www.youtube.com/embed/HnElxo1lghU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -305,22 +323,25 @@
                 <!-- up -->
                 <div id="scrollerup">
                     <a href="#gamefeatures">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerup.png?raw=true" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerup.png?raw=true"
+                            alt="">
                     </a>
                 </div>
                 <!-- line -->
                 <div id="scrollerline">
-                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerline.png?raw=true" alt="">
+                    <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerline.png?raw=true"
+                        alt="">
                 </div>
                 <!-- down -->
                 <div id="scrollerdown">
                     <a href="#platforms">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerdown.png?raw=true" alt="">
+                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/scrollerdown.png?raw=true"
+                            alt="">
                     </a>
                 </div>
             </div>
         </div>
-      
+
     </div>
 
     <div id="emptyspace2"></div>
@@ -328,7 +349,8 @@
     <!-- Platforms -->
     <div id="platforms">
         <div id="genshinlogo">
-            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/jenshinlogo.png?raw=true" alt="">
+            <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/jenshinlogo.png?raw=true"
+                alt="">
         </div>
 
         <div id="platformstext">
@@ -345,27 +367,29 @@
             <div id="platformslogo">
                 <div id="pslogo">
                     <a href="https://www.playstation.com/en-id/games/genshin-impact/">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/ps4.png?raw=true">
+                        <img
+                            src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/ps4.png?raw=true">
                     </a>
                 </div>
                 <div id="iOSlogo">
                     <a href="https://apps.apple.com/app/id1517783697">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/iOS.png?raw=true">
+                        <img
+                            src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/iOS.png?raw=true">
                     </a>
                 </div>
                 <div id="androidlogo">
                     <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/android.png?raw=true">
+                        <img
+                            src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/android.png?raw=true">
                     </a>
                 </div>
-                <div
-PlayStation
-Genshin Impact - PS4 & PS5 games | PlayStation
-Download Genshin Impact free on PlayStation Store. Unravel the mysteries of Teyvat and join forces with a diverse range of characters.
-id="windowslogo">
+                <div PlayStation Genshin Impact - PS4 & PS5 games | PlayStation Download Genshin Impact free on
+                    PlayStation Store. Unravel the mysteries of Teyvat and join forces with a diverse range of
+                    characters. id="windowslogo">
                     <a
                         href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
-                        <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/windows.png?raw=true">
+                        <img
+                            src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/windows.png?raw=true">
                     </a>
                 </div>
             </div>
@@ -373,16 +397,17 @@ id="windowslogo">
 
         <div id="platformsbuttonup">
             <a href="#overview">
-                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/arrowup.png?raw=true" alt="">
+                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/arrowup.png?raw=true"
+                    alt="">
             </a>
         </div>
     </div>
 
-    <!-- <div class="footer">
+    <div class="footer">
         <div class="logo-nav">
             <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logoori.png?raw=true" alt="">
             <div class="footerNav">
-                <a href="index.html">Home</a>
+                <a href="home.html">Home</a>
                 <a href="charactersMainPage.html">Characters</a>
                 <a href="maps.html">Maps</a>
                 <a href="about.html">About Game</a>
@@ -403,7 +428,7 @@ id="windowslogo">
                 alt="">
             <h5 id="cr">Copyright © COGNOSPHERE. All Rights Reserved.</h5>
         </div>
-    </div> -->
+    </div>
 
 </body>
 

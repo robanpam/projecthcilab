@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registerpage.css">
+    <script src="https://kit.fontawesome.com/fcda8d5e00.js" crossorigin="anonymous"></script>
     <script defer src="registerpage.js"> </script>
     <title>Register Page</title>
 </head>
 
 <body>
-    <nav class="navbar" id="myNav">
+<nav class="navbar">
         <div class="logo-menu">
             <div class="logo">
                 <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true" alt="logo"></img>
             </div>
-            <div class="menu">
+            <div class="menu" id="myNav">
                 <a href="home.html">HOME</a>
                 <a href="charactersMainPage.html">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
@@ -24,12 +25,12 @@
             </div>
         </div>
         <div class="menu-button">
-            <a href="registerpage.html" class="active">REGISTER</a>
+            <a href="registerpage.html"  class="active">REGISTER</a>
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa-regular fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" id="burger" onclick="showNavbar()">
+            <i class="fa fa-bars"></i>
         </a>
     </nav>
     <div id="registerpagearea">
@@ -37,7 +38,8 @@
             <div id="welcome1">
             </div>
             <div id="welcome2">
-                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logoori.png?raw=true" alt="">
+                <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logoori.png?raw=true"
+                    alt="">
             </div>
             <div id="welcome3">
                 <div id="welcome31">

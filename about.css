@@ -1,1103 +1,1154 @@
 * {
-    margin: 0;
-    padding: 0;s
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/background.webp?raw=true);
-    background-attachment: fixed;
-    background-position: 20%;
-    background-size: cover;
-    height: 850px;
-    background-repeat: no-repeat;
-  }
-  
-  .navbar {
-    position: absolute;
-    display: flex;
-    background-color: rgba(60, 53, 59, 0.5);
-    justify-content: space-between;
-    /* padding: 2%; */
-    width: 100%;
-    /* width: calc(95vw + 46px); */
-    height: 10%;
-    z-index: 5;
-    font-family: Tahoma;
-    font-style: normal;
-    overflow: hidden;
-  }
-  
-  .logo img {
-    height: 95%;
-    width: 100%;
-  }
-  
-  .logo-menu {
-    display: flex;
-    margin-left: 4%;
-    gap: 2vw;
-  }
-  
-  .menu-button {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-  }
-  
-  .menu a {
-    color: white;
-    opacity: 80%;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-  
-  .menu a.active {
-    color: white;
-    opacity: 100%;
-    text-shadow: 1px 2px 4px #6bd2d9;
-  }
-  
-  .menu a:hover {
-    /* border-top: 5px solid #FFCF0D; */
-    /* border-bottom: 5px solid transparent; */
-    opacity: 100%;
-    text-shadow: 1px 2px 4px #6bd2d9;
-    /* padding-top: 20px; */
-  }
-  
-  .menu-button a {
-    color: white;
-    text-decoration: none;
-    opacity: 80%;
-    transition: all 0.2s;
-  }
-  
-  .menu-button a:hover {
-    opacity: 100%;
-    text-shadow: 1px 2px 4px #6bd2d9;
-  }
-  
-  .menu-button button {
-    background-color: #ffcf0d;
-    height: 100%;
-    padding: 2vh 3vw;
-    font-size: 1em;
-    color: #5f5656;
-    border: transparent;
-  }
-  
-  .navbar a.icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar a {
-      display: none;
-    }
-  
-    .navbar button {
-      display: none;
-    }
-  
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {
-      position: relative;
-    }
-  
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  
-    .navbar.responsive {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-  
-  #header {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/header.png?raw=true);
-    height: calc(45vw + 30px);
-    background-size: cover;
-    /* width: calc(95vw + 46px); */
-    width: 100%;
-    /* width: 100%; */
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* background-repeat: no-repeat; */
-  }
-  
-  #text {
-    display: flex;
-    position: relative;
-    justify-content: right;
-  }
-  
-  #txtheader {
-    margin-right: calc(1vw + 10px);
-    width: calc(31vw + 17px);
-    height: calc(12vw + 10px);
-    /* position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/background.webp?raw=true);
+  background-attachment: fixed;
+  background-position: 20%;
+  background-size: cover;
+  height: 850px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: rgba(60, 53, 59, 0.5);
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  z-index: 5;
+  font-family: Tahoma;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.logo img {
+  height: 95%;
+  width: 100%;
+}
+
+.logo-menu {
+  display: flex;
+  margin-left: 4%;
+  gap: 2vw;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.menu a {
+  color: white;
+  opacity: 80%;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.menu a.active {
+  color: white;
+  opacity: 100%;
+  text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu a:hover {
+  /* border-top: 5px solid #FFCF0D; */
+  /* border-bottom: 5px solid transparent; */
+  opacity: 100%;
+  text-shadow: 1px 2px 4px #6BD2D9;
+  /* padding-top: 20px; */
+}
+
+.menu-button a {
+  color: white;
+  text-decoration: none;
+  opacity: 80%;
+  transition: all 0.2s;
+}
+
+.menu-button a:hover {
+  opacity: 100%;
+  text-shadow: 1px 2px 4px #6BD2D9;
+}
+
+.menu-button button {
+  background-color: #FFCF0D;
+  height: 100%;
+  padding: 2vh 3vw;
+  font-size: 1em;
+  color: #5F5656;
+  border: transparent;
+}
+
+.navbar a.icon {
+  display: none;
+}
+
+#header {
+  background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/header.png?raw=true);
+  height: calc(45vw + 30px);
+  background-size: cover;
+  /* width: calc(95vw + 46px); */
+  width: 100%;
+  /* width: 100%; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* background-repeat: no-repeat; */
+}
+
+#text {
+  display: flex;
+  position: relative;
+  justify-content: right;
+}
+
+#txtheader {
+  margin-right: calc(1vw + 10px);
+  width: calc(31vw + 17px);
+  height: calc(12vw + 10px);
+  /* position: absolute;
       right: 5em; */
-  }
-  
-  #overview {
-    height: calc(50vw + 189px);
-    /* width: calc(95vw + 46px); */
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  #featuresoview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(30 + 30px);
-  }
-  
-  #galoview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(30 + 30px);
-  }
-  
-  /* #galleriesoverview {
+}
+
+#overview {
+  height: calc(50vw + 189px);
+  /* width: calc(95vw + 46px); */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#featuresoview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(30 + 30px);
+}
+
+#galoview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(30 + 30px);
+}
+
+/* #galleriesoverview {
     display: flex;
     justify-content: center;
     align-items: end;
     margin-bottom: calc(3vw + 8px);
   } */
-  
-  #oviewscrolldown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
-    /* width: calc(2vw + 5px); */
-  }
-  
-  #oviewscrolldown img {
-    width: calc(1vw + 38px);
-    height: 10vh;
-  }
-  
-  #platformoview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(32vw + -28px);
-  }
-  
-  /* #gamefeaturestxt{
+
+#oviewscrolldown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  /* width: calc(2vw + 5px); */
+}
+
+#oviewscrolldown img {
+  width: calc(1vw + 38px);
+  height: 10vh;
+}
+
+#platformoview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(32vw + -28px);
+}
+
+/* #gamefeaturestxt{
       width: calc(23vw + 5px);
   } */
-  #overview h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(3vw + 6px);
-    /* identical to box height */
-  
-    color: #ffffff;
-  }
-  
-  #overview h1:hover {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(3vw + 6px);
-    text-shadow: 3px 1px 8px #6bd2d9;
-  }
-  
-  #gamefeatures {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/bggamefeature.png?raw=true);
-    background-size: cover;
-    /* background-repeat: ; */
-    background-attachment: fixed;
-    position: relative;
-    height: fit-content;
-    /* width: calc(95vw + 46px); */
-    width: 100%;
-    /* width: calc(97vw + 40px); */
-    /* display: grid;
+#overview h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(3vw + 6px);
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#overview h1:hover {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(3vw + 6px);
+  text-shadow: 3px 1px 8px #6bd2d9;
+}
+
+#gamefeatures {
+  background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/bggamefeature.png?raw=true);
+  background-size: cover;
+  /* background-repeat: ; */
+  background-attachment: fixed;
+  position: relative;
+  height: fit-content;
+  /* width: calc(95vw + 46px); */
+  width: 100%;
+  /* width: calc(97vw + 40px); */
+  /* display: grid;
       grid-template-columns: 1.85fr 0.15fr; */
-  }
-  
-  #gamefeaturescontent {
-    /* height: 470vh; */
-    /* width: fit-content; */
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
-    position: relative;
-  }
-  
-  /* #gamefeaturesscroll{
+}
+
+#gamefeaturescontent {
+  /* height: 470vh; */
+  /* width: fit-content; */
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+  position: relative;
+}
+
+/* #gamefeaturesscroll{
       display: flex;
       justify-content: center;
       align-items: flex-end;
       border: 5px solid yellow   ;
   } */
-  
-  #gamefeaturesscroller {
-    position: absolute;
-    width: calc(0vw + 5px);
-    height: 100%;
-    right: 0;
-  }
-  
-  #gamefeaturesscrollercontent {
-    margin-top: 10vh;
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    z-index: 100;
-    top: 15%;
-    bottom: 20%;
-    margin-bottom: 10vh;
-    margin-right: 2vw;
-    /* border: 5px solid green; */
-  }
-  
-  #gfscrollerup {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
-  
-  #gfscrollerup img {
-    position: sticky;
-    width: 3vw;
-    height: 10vh;
-  }
-  
-  #gfscrollerline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.3vw;
-  }
-  
-  #gfscrollerline img {
-    position: sticky;
-    width: 0.2vw;
-    height: 50vh;
-  }
-  
-  #gfscrollerdown {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #gfscrollerdown img {
-    position: sticky;
-    width: 3vw;
-    height: 10vh;
-  }
-  
-  #emptyfeatures {
-    height: calc(2vw + 10px);
-    width: 100%;
-    /* border: 5px solid gray; */
-    /* width: calc(2vw + 10px); */
-  }
-  
-  #gamefeaturestitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* height: calc(15vw + 21px);
+
+#gamefeaturesscroller {
+  position: absolute;
+  width: calc(0vw + 5px);
+  height: 100%;
+  right: 0;
+}
+
+#gamefeaturesscrollercontent {
+  margin-top: 10vh;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 100;
+  top: 15%;
+  bottom: 20%;
+  margin-bottom: 10vh;
+  margin-right: 2vw;
+  /* border: 5px solid green; */
+}
+
+#gfscrollerup {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#gfscrollerup img {
+  position: sticky;
+  width: 3vw;
+  height: 10vh;
+}
+
+#gfscrollerline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.3vw;
+}
+
+#gfscrollerline img {
+  position: sticky;
+  width: 0.2vw;
+  height: 50vh;
+}
+
+#gfscrollerdown {
+  display: flex;
+  justify-content: center;
+}
+
+#gfscrollerdown img {
+  position: sticky;
+  width: 3vw;
+  height: 10vh;
+}
+
+#emptyfeatures {
+  height: calc(2vw + 10px);
+  width: 100%;
+  /* border: 5px solid gray; */
+  /* width: calc(2vw + 10px); */
+}
+
+#gamefeaturestitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: calc(15vw + 21px);
     width: calc(97vw + 20px); */
-  }
-  
-  #gamefeaturestitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(3vw + 15px);
-  
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #adventurefeatures {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* width: calc(96vw + 25px); */
-    width: 100%;
-    height: calc(35vw + 20px);
-    /* border: 5px solid blue; */
-  }
-  
-  #adventureimage{
-    display: flex;
-    justify-content: flex-start;
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #adventureimage img {
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #adventuretext {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-  }
-  
-  #adventuretitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5vw;
-    /* margin-right: 5vw; */
-  }
-  
-  #adventuretitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(2vw + 4px);
-    /* line-height: 36px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #adventureexp {
-    display: flex;
-    margin-right: 5vw;
-  }
-  
-  #adventureexp h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(1vw + 2px);
-    /* line-height: 24px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #discoverfeatures{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* width: calc(96vw + 25px); */
-    width: 100%;
-    height: calc(35vw + 20px);
-    /* border: 5px solid blue; */
+}
+
+#gamefeaturestitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(3vw + 15px);
+
+  text-align: center;
+
+  color: #000000;
+}
+
+#adventurefeatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* width: calc(96vw + 25px); */
+  width: 100%;
+  height: calc(35vw + 20px);
+  /* border: 5px solid blue; */
+}
+
+#adventureimage {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#adventureimage img {
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#adventuretext {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+#adventuretitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vw;
+  /* margin-right: 5vw; */
+}
+
+#adventuretitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(2vw + 4px);
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#adventureexp {
+  display: flex;
+  margin-right: 5vw;
+}
+
+#adventureexp h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 2px);
+  /* line-height: 24px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#discoverfeatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* width: calc(96vw + 25px); */
+  width: 100%;
+  height: calc(35vw + 20px);
+  /* border: 5px solid blue; */
+}
+
+#discoverimage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#discoverimage img {
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#discovertext {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+
+#discovertitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vw;
+  margin-right: 5vw;
+}
+
+#discovertitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(2vw + 4px);
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#discoverexp {
+  display: flex;
+  margin-right: 5vw;
+}
+
+#discoverexp h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 2px);
+  /* line-height: 24px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#travelfeatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* width: calc(96vw + 25px); */
+  width: 100%;
+  height: calc(35vw + 20px);
+  /* border: 5px solid blue; */
+}
+
+#travelimage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#travelimage img {
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#traveltext {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+
+#traveltitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vw;
+  margin-right: 5vw;
+}
+
+#traveltitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(2vw + 4px);
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#traveldexp {
+  display: flex;
+  margin-right: 5vw;
+}
+
+#travelexp h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 2px);
+  /* line-height: 24px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#masterfeatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* width: calc(96vw + 25px); */
+  width: 100%;
+  height: calc(35vw + 20px);
+  /* border: 5px solid blue; */
+}
+
+#masterimage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#masterimage img {
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#mastertext {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  margin-left: 3vw;
+}
+
+#mastertitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vw;
+  margin-right: 5vw;
+}
+
+#mastertitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(2vw + 4px);
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#masterexp {
+  display: flex;
+  margin-right: 5vw;
+}
+
+#masterexp h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 2px);
+  /* line-height: 24px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#buildfeatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* width: calc(96vw + 25px); */
+  width: 100%;
+  height: calc(35vw + 20px);
+  /* border: 5px solid blue; */
+}
+
+#buildimage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#buildimage img {
+  width: calc(57vw + 20px);
+  height: calc(30vw + 10px);
+}
+
+#buildtext {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+
+#buildtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vw;
+  margin-right: 5vw;
+}
+
+#buildtitle h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(2vw + 4px);
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#buildexp {
+  display: flex;
+  margin-right: 5vw;
+}
+
+#buildexp h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1vw + 2px);
+  /* line-height: 24px; */
+  text-align: center;
+
+  color: #000000;
+}
+
+#emptyspace {
+  height: 20vh;
+  /* border: 5px solid white; */
+}
+
+#galleries {
+  background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/backgroundgaleries.png?raw=true);
+  background-size: cover;
+  height: calc(47vw + 23px);
+  /* width: calc(95vw + 46px); */
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+#galleriestitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#galleriestitle h1 {
+  text-align: center;
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(3vw + 8px);
+}
+
+#photos {
+  height: calc(43vw + 3px);
+  /* border: 5px solid yellow; */
+}
+
+#galleriescontent {
+  display: grid;
+  grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
+  /* margin-bottom: 7vh; */
+  height: calc(44vw + 9px);
+  /* border: 5px solid palegreen; */
+}
+
+.button {
+  width: 10vw;
+  height: 5vw;
+  border-radius: 5vw;
+  font-size: 2vw;
+  background-color: transparent;
+  border: none;
+}
+
+.button:hover {
+  font-size: 3vw;
+  transform: scale(120%);
+  transition-duration: 3rem;
+}
+
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  /* transform: translate(-40%); */
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: auto; */
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+  margin-left: 50%;
+  /* margin-top: 50%; */
+  transform: translateX(-50%);
+  background-color: transparent;
+  /* margin: 10% auto; */
+  /* padding: 5vw; */
+  /* border: 1px solid white; */
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.modal-content img {
+  width: calc(30vw + 20px);
+}
+
+.slides {
+  width: 100%;
+  position: relative;
+}
+
+.slides .slide {
+
+}
+
+.slides .slide img {
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slides .navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev,
+.slides .navigation .next {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover,
+.slides .navigation .next:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3
   }
 
-  #discoverimage{
-    display: flex;
-    justify-content: flex-end;
+  to {
+    opacity: 1
   }
-  
-  #discoverimage img {
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #discovertext {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-  }
-  
-  #discovertitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5vw;
-    margin-right: 5vw;
-  }
-  
-  #discovertitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(2vw + 4px);
-    /* line-height: 36px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #discoverexp {
-    display: flex;
-    margin-right: 5vw;
-  }
-  
-  #discoverexp h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(1vw + 2px);
-    /* line-height: 24px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #travelfeatures {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* width: calc(96vw + 25px); */
-    width: 100%;
-    height: calc(35vw + 20px);
-    /* border: 5px solid blue; */
-  }
-  
-  #travelimage {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  #travelimage img {
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #traveltext {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-  }
-  
-  #traveltitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5vw;
-    margin-right: 5vw;
-  }
-  
-  #traveltitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(2vw + 4px);
-    /* line-height: 36px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #traveldexp {
-    display: flex;
-    margin-right: 5vw;
-  }
-  
-  #travelexp h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(1vw + 2px);
-    /* line-height: 24px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #masterfeatures {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* width: calc(96vw + 25px); */
-    width: 100%;
-    height: calc(35vw + 20px);
-    /* border: 5px solid blue; */
-  }
-  
-  #masterimage {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #masterimage img {
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #mastertext {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    margin-left: 3vw;
-  }
-  
-  #mastertitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5vw;
-    margin-right: 5vw;
-  }
-  
-  #mastertitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(2vw + 4px);
-    /* line-height: 36px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #masterexp {
-    display: flex;
-    margin-right: 5vw;
-  }
-  
-  #masterexp h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(1vw + 2px);
-    /* line-height: 24px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #buildfeatures {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* width: calc(96vw + 25px); */
-    width: 100%;
-    height: calc(35vw + 20px);
-    /* border: 5px solid blue; */
-  }
-  
-  #buildimage{
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  #buildimage img {
-    width: calc(57vw + 20px);
-    height: calc(30vw + 10px);
-  }
-  
-  #buildtext {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-  }
-  
-  #buildtitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5vw;
-    margin-right: 5vw;
-  }
-  
-  #buildtitle h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(2vw + 4px);
-    /* line-height: 36px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #buildexp {
-    display: flex;
-    margin-right: 5vw;
-  }
-  
-  #buildexp h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(1vw + 2px);
-    /* line-height: 24px; */
-    text-align: center;
-  
-    color: #000000;
-  }
-  
-  #emptyspace {
-    height: 20vh;
-    /* border: 5px solid white; */
-  }
-  
-  #galleries {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/backgroundgaleries.png?raw=true);
-    background-size: cover;
-    height: calc(47vw + 23px);
-    /* width: calc(95vw + 46px); */
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-  }
-  
-  #galleriestitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #galleriestitle h1 {
-    text-align: center;
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(3vw + 8px);
-  }
-  
-  #photos {
-    height: calc(43vw + 3px);
-    /* border: 5px solid yellow; */
-  }
-  
-  #galleriescontent {
-    display: grid;
-    grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
-    /* margin-bottom: 7vh; */
-    height: calc(44vw + 9px);
-    /* border: 5px solid palegreen; */
-  }
-  
-  .button {
-    width: 10vw;
-    height: 5vw;
-    border-radius: 5vw;
-    font-size: 2vw;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .button:hover {
-    font-size: 3vw;
-    transform: scale(120%);
-    transition-duration: 3rem;
-  }
-  
-  /* Modal Background */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    /* transform: translate(-40%); */
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    /* overflow: auto; */
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    margin-left: 50%;
-    /* margin-top: 50%; */
-    transform: translateX(-50%);
-    background-color: transparent;
-    /* margin: 10% auto; */
-    /* padding: 5vw; */
-    /* border: 1px solid white; */
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    /* overflow: hidden; */
-  }
-  
-  .modal-content img {
-    width: calc(30vw + 20px);
-  }
-  
-  .slides {
-    width: 100%;
-    position: relative;
-  }
-  
-  .slides .slide {
-  }
-  
-  .slides .slide img {
-    width: 100%;
-    animation-name: fade;
-    animation-duration: 1s;
-  }
-  
-  .slides .navigation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
+}
+
+@media (max-width: 768px) {
+
   .slides .navigation .prev,
   .slides .navigation .next {
-    cursor: pointer;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    background: rgba(0, 0, 0, 0.2);
-    user-select: none;
-    transition: 0.6s ease;
+    font-size: 15px;
+    padding: 10px;
   }
-  
-  .slides .navigation .prev:hover,
-  .slides .navigation .next:hover {
-    background: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 576px) {
+
+  .slides .navigation .prev,
+  .slides .navigation .next {
+    font-size: 12px;
+    padding: 7px;
   }
-  
-  @keyframes fade {
-      from{opacity: 0.3}
-      to {opacity: 1}
-    }
-    
-    /* @media (max-width: 992px){
-      .slides .navigation .prev, .slides .navigation .next{
-        font-size: 18px;
-        padding: 13px;
-      } */
-    }
-    
-    @media (max-width: 768px){
-      .slides .navigation .prev, .slides .navigation .next{
-        font-size: 15px;
-        padding: 10px;
-      }
-    }
-    
-    @media (max-width: 576px){
-      .slides .navigation .prev, .slides .navigation .next{
-        font-size: 12px;
-        padding: 7px;
-      }
-    }
-    
-    @media (max-width: 360px){
-      .slides .navigation .prev, .slides .navigation .next{
-        font-size: 11px;
-        padding: 6px;
-      }
-    }
-  
-  /* The Close Button */
-  .close {
-    color: white;
-    /* float: right; */
-    margin-left: 2vw;
-    font-size: 5vw;
-    font-weight: bold;
+}
+
+@media (max-width: 360px) {
+
+  .slides .navigation .prev,
+  .slides .navigation .next {
+    font-size: 11px;
+    padding: 6px;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  /* float: right; */
+  margin-left: 2vw;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linespace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 3vw; */
+  /* border: 5px solid green; */
+  height: calc(42vw + 10px);
+  margin-left: calc(5vw + -3px);
+}
+
+#linespace img {
+  height: calc(35vw + 15px);
+}
+
+#videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 9vw; */
+  /* border: 5px solid red; */
+  height: calc(43vw + 4px);
+}
+
+#scroller {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.25fr;
+  height: calc(43vw + 6px);
+  /* border: 5px solid brown; */
+}
+
+#scrollerup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(3vw + 10px);
+  /* border: 5px solid orange; */
+}
+
+#scrollerup img {
+  width: calc(2vw + 15px);
+  height: calc(3vw + 10px);
+}
+
+#scrollerline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(26vw + -3px);
+  /* border: 5px solid pink; */
+}
+
+#scrollerline img {
+  width: calc(0.09999999999999964vw + 2px);
+  height: calc(17vw + 11px);
+}
+
+#scrollerdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(3vw + 10px);
+  /* border: 5px solid orange; */
+}
+
+#scrollerdown img {
+  width: calc(2vw + 15px);
+  height: calc(3vw + 10px);
+}
+
+#galleriescontent h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 77px;
+  transition: 500ms;
+  color: #ffffff;
+}
+
+#galleriescontent h1:hover {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  text-shadow: 3px 1px 8px #6bd2d9;
+  transition: 500ms;
+}
+
+#emptyspace2 {
+  height: 70px;
+}
+
+#platforms {
+  height: calc(33vw + 199px);
+  /* border: 5px solid purple; */
+  display: grid;
+  /* width: calc(95vw + 46px); */
+  width: 100%;
+  grid-template-rows: 0.5fr 0.7fr 0.3fr;
+}
+
+#genshinlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(98.5vw + -10px);
+  /* border: 5px solid white; */
+  height: calc(23vw + 10px);
+}
+
+#genshinlogo img {
+  width: calc(27vw + 97px);
+  /* height: 170px; */
+}
+
+#platformstext {
+  height: calc(2vw + 5px);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#ptext1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(98.5vw + -10px);
+  /* border: 5px solid green; */
+}
+
+#ptext1 h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(3vw + 9px);
+
+  color: #ffffff;
+}
+
+#ptext2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(98.5vw + -10px);
+  /* border: 5px solid green; */
+  margin-top: calc(2vw + 3px);
+}
+
+#ptext2 h1 {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(1vw + 9px);
+
+  color: #0b0a0a;
+}
+
+#platformslogo {
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid crimson; */
+  width: calc(98.5vw + -10px);
+}
+
+#platformslogo img {
+  width: calc(3vw + 30px);
+}
+
+#pslogo img {
+  width: calc(14vw + 30px);
+  height: calc(4vw + 19px);
+  /* border: 5px solid yellow; */
+}
+
+#pslogo:hover {
+  filter: drop-shadow(1px 2px 4px #6bd2d9);
+}
+
+#iOSlogo:hover {
+  filter: drop-shadow(1px 2px 4px #6bd2d9);
+}
+
+#androidlogo:hover {
+  filter: drop-shadow(1px 2px 4px #6bd2d9);
+}
+
+#windowslogo:hover {
+  filter: drop-shadow(1px 2px 4px #6bd2d9);
+}
+
+#platformsbuttonup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#platformsbuttonup img {
+  width: calc(3vw + 10px);
+  height: calc(3vw + 15px);
+}
+
+.footer {
+  background-image: url('https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/footerbg.png?raw=true');
+  position: relative;
+  width: 100%;
+  height: 65vh;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5vw;
+  width: 100%;
+  height: 30%;
+}
+
+.logo-nav img {
+  width: 11%;
+  height: auto;
+}
+
+.footerNav {
+  display: flex;
+  gap: 1vw;
+  font-family: Tahoma;
+}
+
+.footerNav a {
+  text-decoration: none;
+  color: #838383;
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5vw;
+  width: 100%;
+}
+
+.img-text img {
+  width: 12%;
+  height: auto;
+}
+
+.img-text h5 {
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  font-family: Tahoma;
+  font-weight: lighter;
+  color: #838383;
+}
+
+#cr {
+  color: white;
+}
+
+.img-text img:not(:first-child) {
+  width: 25%;
+  height: 50%;
+}
+
+@media screen and (max-width: 376px) {
+
+  .logo img {
+      width: 80%;
   }
-  
-  #photos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #linespace {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 3vw; */
-    /* border: 5px solid green; */
-    height: calc(42vw + 10px);
-    margin-left: calc(5vw + -3px);
-  }
-  
-  #linespace img {
-    height: calc(35vw + 15px);
-  }
-  
-  #videos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 9vw; */
-    /* border: 5px solid red; */
-    height: calc(43vw + 4px);
-  }
-  
-  #scroller {
-    display: grid;
-    grid-template-rows: 0.25fr 1fr 0.25fr;
-    height: calc(43vw + 6px);
-    /* border: 5px solid brown; */
-  }
-  
-  #scrollerup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(3vw + 10px);
-    /* border: 5px solid orange; */
-  }
-  
-  #scrollerup img {
-    width: calc(2vw + 15px);
-    height: calc(3vw + 10px);
-  }
-  
-  #scrollerline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(26vw + -3px);
-    /* border: 5px solid pink; */
-  }
-  
-  #scrollerline img {
-    width: calc(0.09999999999999964vw + 2px);
-    height: calc(17vw + 11px);
-  }
-  
-  #scrollerdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(3vw + 10px);
-    /* border: 5px solid orange; */
-  }
-  
-  #scrollerdown img {
-    width: calc(2vw + 15px);
-    height: calc(3vw + 10px);
-  }
-  
-  #galleriescontent h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 77px;
-    transition: 500ms;
-    color: #ffffff;
-  }
-  
-  #galleriescontent h1:hover {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 70px;
-    text-shadow: 3px 1px 8px #6bd2d9;
-    transition: 500ms;
-  }
-  
-  #emptyspace2 {
-    height: 70px;
-  }
-  
-  #platforms {
-    height: calc(33vw + 199px);
-    /* border: 5px solid purple; */
-    display: grid;
-    /* width: calc(95vw + 46px); */
-    width: 100%;
-    grid-template-rows: 0.5fr 0.7fr 0.3fr;
-  }
-  
-  #genshinlogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(98.5vw + -10px);
-    /* border: 5px solid white; */
-    height: calc(23vw + 10px);
-  }
-  
-  #genshinlogo img {
-    width: calc(27vw + 97px);
-    /* height: 170px; */
-  }
-  
-  #platformstext {
-    height: calc(2vw + 5px);
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  
-  #ptext1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(98.5vw + -10px);
-    /* border: 5px solid green; */
-  }
-  
-  #ptext1 h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(3vw + 9px);
-  
-    color: #ffffff;
-  }
-  
-  #ptext2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(98.5vw + -10px);
-    /* border: 5px solid green; */
-    margin-top: calc(2vw + 3px);
-  }
-  
-  #ptext2 h1 {
-    font-family: "Tahoma";
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(1vw + 9px);
-  
-    color: #0b0a0a;
-  }
-  
-  #platformslogo {
-    display: flex;
-    justify-content: center;
-    /* border: 5px solid crimson; */
-    width: calc(98.5vw + -10px);
-  }
-  
-  #platformslogo img {
-    width: calc(3vw + 30px);
-  }
-  
-  #pslogo img {
-    width: calc(14vw + 30px);
-    height: calc(4vw + 19px);
-    /* border: 5px solid yellow; */
-  }
-  
-  #pslogo:hover {
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-  }
-  
-  #iOSlogo:hover {
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-  }
-  
-  #androidlogo:hover {
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-  }
-  
-  #windowslogo:hover {
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-  }
-  
-  #platformsbuttonup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #platformsbuttonup img {
-    width: calc(3vw + 10px);
-    height: calc(3vw + 15px);
-  }
-  
-  .footer {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/footerbg.png?raw=true);
-    position: relative;
-    width: 100%;
-    height: 65vh;
-  }
-  
-  .logo-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 1vw;
-    width: 100%;
-    height: 30%;
-  }
-  
+
   .logo-nav img {
-    width: 11%;
-    height: 40%;
+      width: 20%;
   }
-  
-  .footerNav {
-    display: flex;
-    gap: 1vw;
-    font-family: Tahoma;
-  }
-  
-  .footerNav a {
-    text-decoration: none;
-    color: #838383;
-  }
-  
-  .img-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 0.5vw;
-    width: 100%;
-  }
-  
+
   .img-text img {
-    width: 12%;
-    height: 45%;
+      width: 20%;
   }
-  
+
   .img-text h5 {
-    width: 70%;
-    align-items: center;
-    text-align: center;
-    font-family: Tahoma;
-    font-weight: lighter;
-    color: #838383;
+      width: 70%;
+      font-size: 70%;
   }
-  
-  #cr {
-    color: white;
+
+  .footerNav {
+      font-size: 80%;
   }
-  
-  .img-text img:not(:first-child) {
-    width: 25%;
-    height: 50%;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+      position: fixed;
+      overflow: visible;
+      align-items: center;
   }
-  
+
+  .logo {
+      width: 8rem;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .menu-button a {
+      display: flex;
+      position: absolute;
+      align-items: end;
+  }
+
+  .menu-button button {
+      display: none;
+  }
+
+  .navbar a.icon {
+      padding: 3%;
+      color: white;
+      display: block;
+  }
+
+  .menu.responsive {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      align-items: end;
+      gap: 10px;
+      right: 2rem;
+      top: 5rem;
+      z-index: 10;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+
+  .logo img {
+      width: 80%;
+  }
+
+}
