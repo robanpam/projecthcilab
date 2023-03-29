@@ -10,6 +10,7 @@ body{
     background-position: 50%;
     background-attachment: fixed;   
     background-repeat: no-repeat;
+    width: 100%;
     height: 150vh;
     display: grid;
     grid-template-rows: 1.5fr 0.5fr;
@@ -99,18 +100,19 @@ body{
 }
 
 #mainarea{
-    height: 100vh;
+    width: 100%;
+    /* width: fit-content; */
+    height: 100%;
     display: grid;
-    grid-template-columns: 0.3fr 1.3fr 0.1fr;
+    grid-template-columns: 0.3fr 1fr 0.7fr;
 }
 
 #charbararea{
+    width: calc(17vw + 50px);
     margin-top: 5vh;
     display: flex;
     justify-content: baseline;
     align-items: center;
-    height: 100vh;
-    width: 20vw;
 }
 
 #charbar{
@@ -137,10 +139,14 @@ body{
     align-items: center;
 }
 
+/* #mondstadt :active{
+    filter: drop-shadow(1px 2px 4px #6bd2d9);
+} */
+
 #mondstadtbar{
-    width: 5vw;
-    height: 10vh;
-    opacity: 70%;
+    width: calc(4vw + 10px);
+    height: calc(4vw + 10px);
+    opacity: 100%;
     position: relative;
     z-index: 3;
 }
@@ -172,9 +178,9 @@ body{
 }
 
 #liyuebar{
-    width: 5vw;
-    height: 10vh;
-    opacity: 70%;
+    width: calc(4vw + 10px);
+    height: calc(4vw + 10px);
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -206,9 +212,9 @@ body{
 }
 
 #inazumabar{
-    width: 5vw;
-    height: 10vh;
-    opacity: 70%;
+    width: calc(4vw + 10px);
+    height: calc(4vw + 10px);
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -240,9 +246,9 @@ body{
 }
 
 #sumerubar{
-    width: 5vw;
-    height: 10vh;
-    opacity: 70%;
+    width: calc(4vw + 10px);
+    height: calc(4vw + 10px);
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -275,28 +281,34 @@ body{
 #charidentity{
     display: grid;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
-    height: 100vh;
+    /* height: calc(60vw + 30px); */
+    width: calc(36vw + 50px);
+    /* height: calc(99vw + 100px); */
 }
 
 #charnation{
     display: grid;
     grid-template-rows: 0.8fr 0.2fr;
-    margin-top: 17vh;
-    margin-left: 5vw;
-    margin-right: 10vw;
+    margin-top: calc(7vw + 15px);
+    /* margin-left: calc(3vw + 20px); */
+    /* margin-right: 10vw; */
     border-bottom-color: #FFFFFF;
     border-bottom-width: 0.3vw;
     border-bottom-style: solid;
+    width: calc(35vw + 50px);
+    height: calc(3vw + 10px);
 }
 
 #charnation h1{
-    font-size: 2vw;
+    font-size: calc(0.5vw + 15px);
     color: white;
 }
 
 #charnameva{
     display: grid;
     grid-template-rows: 1.5fr 0.5fr;
+    width: calc(35vw + 50px);
+    height: calc(10vw + 30px);
 }
 
 #charname{
@@ -309,7 +321,7 @@ body{
     font-family: 'Tahoma';
 font-style: italic;
 font-weight: 80vw;
-font-size: 7vw;
+font-size: calc(4vw + 30px);
 /* font-line: */
 
 color: #FFFFFF;
@@ -324,38 +336,39 @@ text-shadow: 5px 5px 0px #2FBD0C;
 #charva{
     display: flex;
     justify-content: flex-end;
-    align-items: start;
+    align-items: center;
 }
 
 #charva h1{
     font-family: 'Tahoma';
 font-style: normal;
-font-weight: 500;
-font-size: 2vw;
-line-height: 30px;
+font-weight: 200;
+font-size: calc(0.001 + 2px);
+/* line-height: 30px; */
 
 color: #FFFFFF;
 
 }
 
 #chardesc{
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
-    margin: 2%;
-    margin-left: 5vw;
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+    /* background-color: #0AE5F3; */
     border-inline-color: white;
-    border-inline-width: 0.3vw;
-    border-inline-style:solid;
+    border-inline-width: calc(0.1vw + 5px);
+    border-inline-style: solid;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-start-end-radius: 2vw;
-    border-start-start-radius: 2vw;
+    border-start-end-radius: calc(0.2vw + 15px);
+    border-start-start-radius: calc(0.2vw + 10px);
     border-inline-end-color:white;
     border-inline-end-style:solid;
-    border-inline-end-width: 0.3vw;
+    border-inline-end-width: calc(0.1vw + 5px);
+    width: calc(35vw + 50px);
+    height: calc(14vw + 20px);
 }
 
 #chardesc h1{
@@ -364,19 +377,21 @@ color: #FFFFFF;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2vw;
-    line-height: 26px;
+    font-size: calc(0.8vw + 10px);
+    line-height: calc(0.5vw + 20px);
 
     color: #FFFFFF;
 
 }
 
 #otherchar{
-    margin-top: 1vh;
+    margin-top: calc(0.03vw + 10px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: calc(35vw + 50px);
+    height: calc(10vw + 30px);
 }
 
 #otherchartitle{
@@ -401,28 +416,28 @@ color: #FFFFFF;
 }
 
 .charlist{
-    width: 7vw;
-    height: 15vh;
+    width: calc(7vw + 10px);
+    height: calc(8vw + 5px);
 }
 
 
 .charlist:hover{
     transform: scale(120%);
     transition: 100ms;
-    opacity: 1;
 }
 
 #charphoto{
     display: flex;
-    justify-content: last baseline;
+    justify-content:flex-end;
     align-items: last baseline;
     z-index: 2;
-    height: 100vh;
+    /* height: 100vh; */
+    width: calc(32vw + 50px);
 }
 
 #charphoto img{
-    width: 40vw;
-    height: 45vw;
+    width: calc(35vw + 20px);
+    height: calc(50vw + 30px);
 }
 
 .footer {
@@ -489,4 +504,209 @@ color: #FFFFFF;
 .img-text img:not(:first-child) {
     width: 25%;
     height: 50%;
+}
+
+@media screen and (max-width: 376px){
+    #charbararea{
+        width: calc(17vw + 50px);
+        margin-top: calc(5vw + 7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #charbar{
+        margin-top: calc(3vw + 2px);
+        height: calc(7vw + 5px);
+        width: calc(6vw + 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #charnation{
+        display: grid;
+        grid-template-rows: 0.8fr 0.2fr;
+        margin-top: calc(15vw + 15px);
+        /* margin-left: calc(3vw + 20px); */
+        /* margin-right: 10vw; */
+        border-bottom-color: #FFFFFF;
+        border-bottom-width: 0.3vw;
+        border-bottom-style: solid;
+        width: calc(35vw + 50px);
+        height: calc(3vw + 10px);
+    }
+
+    #charnameva{
+        display: grid;
+        grid-template-rows: 1.5fr 0.5fr;
+        width: calc(35vw + 50px);
+        height: calc(30vw + 30px);
+    }
+
+    #charname{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    #charname h1{
+        font-family: 'Tahoma';
+    font-style: italic;
+    font-weight: 80vw;
+    font-size: calc(4vw + 30px);
+    /* font-line: */
+    
+    color: #FFFFFF;
+    
+    /* mondstadthover
+    
+    hover characters in mondstadt
+    */
+    text-shadow: 5px 5px 0px #0AE5F3;
+    }
+
+    #charva{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    #charva h1{
+        font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 200;
+    font-size: calc(0.05 + 1px);
+    /* line-height: 30px; */
+    
+    color: #FFFFFF;
+    
+    }
+
+    #chardesc{
+        z-index: 4;
+        margin-top: calc(3vw + 10px);
+        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+        /* background-color: #0AE5F3; */
+        border-inline-color: white;
+        border-inline-width: calc(0.1vw + 5px);
+        border-inline-style: solid;
+        border-bottom-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-start-end-radius: calc(0.2vw + 15px);
+        border-start-start-radius: calc(0.2vw + 10px);
+        border-inline-end-color:white;
+        border-inline-end-style:solid;
+        border-inline-end-width: calc(0.1vw + 5px);
+        width: calc(35vw + 50px);
+        height: calc(32vw + 20px);
+    }
+
+    #chardesc h1{
+        margin: 5%;
+    
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(0.5vw + 7px);
+        line-height: calc(0.5vw + 20px);
+    
+        color: #FFFFFF;
+    
+    }
+
+    #otherchar{
+        margin-top: calc(0.03vw + 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(35vw + 50px);
+        height: calc(30vw + 30px);
+    }
+
+    #othercharslist{
+        /* margin-left: 2vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #otherchartitle h1{
+        font-size: calc(1.0vw + 10px);
+        color: white;
+    }
+
+    .charlist{
+        width: calc(8vw + 10px);
+        height: calc(10vw + 5px);
+    }
+
+    #charphoto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        /* height: 100vh; */
+        width: calc(32vw + 50px);
+        margin-bottom: 20vw;
+    }
+    
+    #charphoto img{
+        width: calc(40vw + 20px);
+        height: calc(80vw + 30px);
+    }
+
+
+}
+
+
+@media screen and (max-width: 769px){
+
+    #charbararea{
+        width: calc(17vw + 50px);
+        margin-top: calc(5vw + 7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #charbar{
+        margin-top: calc(3vw + 2px);
+        height: calc(7vw + 5px);
+        width: calc(6vw + 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mondstadtbar{
+        width: calc(5vw + 10px);
+        height: calc(5vw + 10px);
+    }
+
+    #liyuebar{
+        width: calc(5vw + 10px);
+        height: calc(5vw + 10px);
+    }
+
+    #inazumabar{
+        width: calc(5vw + 10px);
+        height: calc(5vw + 10px);
+    }
+
+    #sumerubar{
+        width: calc(5vw + 10px);
+        height: calc(5vw + 10px);
+    }
+    
 }
