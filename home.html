@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <nav class="navbar" id="myNav">
+    <nav class="navbar">
         <div class="logo-menu">
             <div class="logo">
                 <img src="https://github.com/robanpam/projecthcilab/blob/main/assets/img/home/logo.png?raw=true" alt="logo"></img>
             </div>
-            <div class="menu">
+            <div class="menu" id="myNav">
                 <a href="home.html" class="active">HOME</a>
                 <a href="charactersMainPage.html">CHARACTERS</a>
                 <a href="maps.html">MAPS</a>
@@ -28,7 +28,7 @@
             <button
                 onclick="location.href='https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default'">Download</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" id="burger" onclick="showNavbar()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>

@@ -29,6 +29,10 @@
     overflow: hidden;
 }
 
+.logo {
+    width: 9rem;
+}
+
 .logo img {
     height: 95%;
     width: 100%;
@@ -401,6 +405,10 @@
 
 @media screen and (max-width: 376px) {
 
+    .logo img {
+        width: 80%;
+    }
+
     .jumbotron-play img {
         margin-top: 65%;
         width: 5%;
@@ -514,11 +522,27 @@
 
 @media screen and (max-width: 600px) {
 
-    .navbar .logo-menu .menu {
+    .navbar {
+        position: fixed;
+        overflow: visible;
+        align-items: center;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .menu {
         display: none;
     }
 
-    .navbar .menu-button {
+    .menu-button a {
+        display: flex;
+        position: absolute;
+        align-items: end;
+    }
+
+    .menu-button button {
         display: none;
     }
 
@@ -527,29 +551,25 @@
         color: white;
         display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
-    
-    .navbar.responsive {
-        position: relative;
-    }
-
-    .navbar.responsive a.icon {
+    .menu.responsive {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .navbar.responsive .logo-menu .menu {
-        float: none;
-        display: block;
-        text-align: left;
+        align-items: end;
+        gap: 10px;
+        right: 2rem;
+        top: 5rem;
+        z-index: 10;
     }
 
 }
 
 @media screen and (max-width: 769px) {
+
+    .logo img {
+        width: 80%;
+    }
 
     .jumbotron-download img {
         margin-top: 61%;
@@ -577,6 +597,5 @@
     .weaponName {
         gap: 6vw;
     }
-
 
 }

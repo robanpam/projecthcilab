@@ -1,9 +1,9 @@
-function myFunction() {
+function showNavbar() {
     var x = document.getElementById("myNav");
-    if (x.className === "navbar") {
+    if (x.className === "menu") {
         x.className += " responsive";
     } else {
-        x.className = "navbar";
+        x.className = "menu";
     }
 }
 
