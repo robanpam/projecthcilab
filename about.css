@@ -70,11 +70,8 @@ body {
 }
 
 .menu a:hover {
-  /* border-top: 5px solid #FFCF0D; */
-  /* border-bottom: 5px solid transparent; */
   opacity: 100%;
   text-shadow: 1px 2px 4px #6BD2D9;
-  /* padding-top: 20px; */
 }
 
 .menu-button a {
@@ -106,12 +103,9 @@ body {
   background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/header.png?raw=true);
   height: calc(45vw + 30px);
   background-size: cover;
-  /* width: calc(95vw + 46px); */
   width: 100%;
-  /* width: 100%; */
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  /* background-repeat: no-repeat; */
 }
 
 #text {
@@ -124,13 +118,10 @@ body {
   margin-right: calc(1vw + 10px);
   width: calc(31vw + 17px);
   height: calc(12vw + 10px);
-  /* position: absolute;
-      right: 5em; */
 }
 
 #overview {
   height: calc(50vw + 189px);
-  /* width: calc(95vw + 46px); */
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -150,19 +141,11 @@ body {
   width: calc(30 + 30px);
 }
 
-/* #galleriesoverview {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-bottom: calc(3vw + 8px);
-  } */
-
 #oviewscrolldown {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
-  /* width: calc(2vw + 5px); */
 }
 
 #oviewscrolldown img {
@@ -177,16 +160,11 @@ body {
   width: calc(32vw + -28px);
 }
 
-/* #gamefeaturestxt{
-      width: calc(23vw + 5px);
-  } */
 #overview h1 {
   font-family: "Tahoma";
   font-style: normal;
   font-weight: 400;
   font-size: calc(3vw + 6px);
-  /* identical to box height */
-
   color: #ffffff;
 }
 
@@ -201,33 +179,19 @@ body {
 #gamefeatures {
   background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/bggamefeature.png?raw=true);
   background-size: cover;
-  /* background-repeat: ; */
   background-attachment: fixed;
   position: relative;
   height: fit-content;
-  /* width: calc(95vw + 46px); */
   width: 100%;
-  /* width: calc(97vw + 40px); */
-  /* display: grid;
-      grid-template-columns: 1.85fr 0.15fr; */
 }
 
 #gamefeaturescontent {
-  /* height: 470vh; */
-  /* width: fit-content; */
   width: 100%;
   height: fit-content;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
   position: relative;
 }
-
-/* #gamefeaturesscroll{
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      border: 5px solid yellow   ;
-  } */
 
 #gamefeaturesscroller {
   position: absolute;
@@ -248,13 +212,11 @@ body {
   bottom: 20%;
   margin-bottom: 10vh;
   margin-right: 2vw;
-  /* border: 5px solid green; */
 }
 
 #gfscrollerup {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 #gfscrollerup img {
@@ -290,8 +252,6 @@ body {
 #emptyfeatures {
   height: calc(2vw + 10px);
   width: 100%;
-  /* border: 5px solid gray; */
-  /* width: calc(2vw + 10px); */
 }
 
 #gamefeaturestitle {
@@ -299,8 +259,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: calc(15vw + 21px);
-    width: calc(97vw + 20px); */
 }
 
 #gamefeaturestitle h1 {
@@ -317,10 +275,8 @@ body {
 #adventurefeatures {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* width: calc(96vw + 25px); */
   width: 100%;
   height: calc(35vw + 20px);
-  /* border: 5px solid blue; */
 }
 
 #adventureimage {
@@ -337,7 +293,7 @@ body {
 
 #adventuretext {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #adventuretitle {
@@ -345,8 +301,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5vw;
-  /* margin-right: 5vw; */
 }
 
 #adventuretitle h1 {
@@ -354,15 +308,14 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: calc(2vw + 4px);
-  /* line-height: 36px; */
   text-align: center;
-
+  margin-right: 10vw;
   color: #000000;
 }
 
 #adventureexp {
   display: flex;
-  margin-right: 5vw;
+  margin-right: 10vw;
 }
 
 #adventureexp h1 {
@@ -370,19 +323,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 2px);
-  /* line-height: 24px; */
   text-align: center;
-
   color: #000000;
 }
 
 #discoverfeatures {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* width: calc(96vw + 25px); */
   width: 100%;
   height: calc(35vw + 20px);
-  /* border: 5px solid blue; */
 }
 
 #discoverimage {
@@ -414,15 +363,14 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: calc(2vw + 4px);
-  /* line-height: 36px; */
   text-align: center;
-
   color: #000000;
 }
 
 #discoverexp {
   display: flex;
-  margin-right: 5vw;
+  width: 25vw;
+  margin-left: 5vw;
 }
 
 #discoverexp h1 {
@@ -430,19 +378,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 2px);
-  /* line-height: 24px; */
   text-align: center;
-
   color: #000000;
 }
 
 #travelfeatures {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* width: calc(96vw + 25px); */
   width: 100%;
   height: calc(35vw + 20px);
-  /* border: 5px solid blue; */
 }
 
 #travelimage {
@@ -466,7 +410,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 5vw;
-  margin-right: 5vw;
+  margin-right: 7vw;
 }
 
 #traveltitle h1 {
@@ -474,14 +418,13 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: calc(2vw + 4px);
-  /* line-height: 36px; */
   text-align: center;
-
   color: #000000;
 }
 
-#traveldexp {
+#travelexp {
   display: flex;
+  width: 25vw;
   margin-right: 5vw;
 }
 
@@ -490,19 +433,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 2px);
-  /* line-height: 24px; */
   text-align: center;
-
   color: #000000;
 }
 
 #masterfeatures {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* width: calc(96vw + 25px); */
   width: 100%;
   height: calc(35vw + 20px);
-  /* border: 5px solid blue; */
 }
 
 #masterimage {
@@ -551,19 +490,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 2px);
-  /* line-height: 24px; */
   text-align: center;
-
   color: #000000;
 }
 
 #buildfeatures {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* width: calc(96vw + 25px); */
   width: 100%;
   height: calc(35vw + 20px);
-  /* border: 5px solid blue; */
 }
 
 #buildimage {
@@ -595,9 +530,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: calc(2vw + 4px);
-  /* line-height: 36px; */
   text-align: center;
-
   color: #000000;
 }
 
@@ -611,22 +544,18 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(1vw + 2px);
-  /* line-height: 24px; */
   text-align: center;
-
   color: #000000;
 }
 
 #emptyspace {
   height: 20vh;
-  /* border: 5px solid white; */
 }
 
 #galleries {
   background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/backgroundgaleries.png?raw=true);
   background-size: cover;
   height: calc(47vw + 23px);
-  /* width: calc(95vw + 46px); */
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 3fr;
@@ -636,6 +565,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
 }
 
 #galleriestitle h1 {
@@ -648,15 +578,12 @@ body {
 
 #photos {
   height: calc(43vw + 3px);
-  /* border: 5px solid yellow; */
 }
 
 #galleriescontent {
   display: grid;
   grid-template-columns: 1.3fr 0.2fr 1.25fr 0.25fr;
-  /* margin-bottom: 7vh; */
   height: calc(44vw + 9px);
-  /* border: 5px solid palegreen; */
 }
 
 .button {
@@ -664,8 +591,19 @@ body {
   height: 5vw;
   border-radius: 5vw;
   font-size: 2vw;
+  text-shadow: 1px 2px 4px #6998d2;
   background-color: transparent;
   border: none;
+}
+
+#photoBtn {
+  margin-bottom: 5vw;
+  margin-left: 5vw;
+}
+
+#videoBtn {
+  margin-bottom: 5vw;
+  margin-left: 5vw;
 }
 
 .button:hover {
@@ -680,28 +618,22 @@ body {
   position: fixed;
   z-index: 10;
   left: 0;
-  /* transform: translate(-40%); */
   top: 0;
   width: 100vw;
   height: 100vh;
-  /* overflow: auto; */
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Modal Content */
 .modal-content {
+  margin-top: 10vh;
   margin-left: 50%;
-  /* margin-top: 50%; */
   transform: translateX(-50%);
   background-color: transparent;
-  /* margin: 10% auto; */
-  /* padding: 5vw; */
-  /* border: 1px solid white; */
   width: fit-content;
   height: fit-content;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .modal-content img {
@@ -711,10 +643,6 @@ body {
 .slides {
   width: 100%;
   position: relative;
-}
-
-.slides .slide {
-
 }
 
 .slides .slide img {
@@ -790,7 +718,6 @@ body {
 /* The Close Button */
 .close {
   color: white;
-  /* float: right; */
   margin-left: 2vw;
   font-size: 5vw;
   font-weight: bold;
@@ -813,9 +740,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 3vw; */
-  /* border: 5px solid green; */
-  height: calc(42vw + 10px);
+  height: calc(40vw + 10px);
   margin-left: calc(5vw + -3px);
 }
 
@@ -827,8 +752,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 9vw; */
-  /* border: 5px solid red; */
   height: calc(43vw + 4px);
 }
 
@@ -836,7 +759,6 @@ body {
   display: grid;
   grid-template-rows: 0.25fr 1fr 0.25fr;
   height: calc(43vw + 6px);
-  /* border: 5px solid brown; */
 }
 
 #scrollerup {
@@ -844,7 +766,6 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(3vw + 10px);
-  /* border: 5px solid orange; */
 }
 
 #scrollerup img {
@@ -857,7 +778,6 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(26vw + -3px);
-  /* border: 5px solid pink; */
 }
 
 #scrollerline img {
@@ -870,7 +790,6 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(3vw + 10px);
-  /* border: 5px solid orange; */
 }
 
 #scrollerdown img {
@@ -904,9 +823,7 @@ body {
 
 #platforms {
   height: calc(33vw + 199px);
-  /* border: 5px solid purple; */
   display: grid;
-  /* width: calc(95vw + 46px); */
   width: 100%;
   grid-template-rows: 0.5fr 0.7fr 0.3fr;
 }
@@ -916,13 +833,11 @@ body {
   justify-content: center;
   align-items: center;
   width: calc(98.5vw + -10px);
-  /* border: 5px solid white; */
   height: calc(23vw + 10px);
 }
 
 #genshinlogo img {
   width: calc(27vw + 97px);
-  /* height: 170px; */
 }
 
 #platformstext {
@@ -936,7 +851,6 @@ body {
   justify-content: center;
   align-items: center;
   width: calc(98.5vw + -10px);
-  /* border: 5px solid green; */
 }
 
 #ptext1 h1 {
@@ -944,7 +858,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: calc(3vw + 9px);
-
   color: #ffffff;
 }
 
@@ -953,7 +866,6 @@ body {
   justify-content: center;
   align-items: center;
   width: calc(98.5vw + -10px);
-  /* border: 5px solid green; */
   margin-top: calc(2vw + 3px);
 }
 
@@ -969,7 +881,6 @@ body {
 #platformslogo {
   display: flex;
   justify-content: center;
-  /* border: 5px solid crimson; */
   width: calc(98.5vw + -10px);
 }
 
@@ -980,7 +891,6 @@ body {
 #pslogo img {
   width: calc(14vw + 30px);
   height: calc(4vw + 19px);
-  /* border: 5px solid yellow; */
 }
 
 #pslogo:hover {
@@ -1078,24 +988,29 @@ body {
 @media screen and (max-width: 376px) {
 
   .logo img {
-      width: 80%;
+    width: 80%;
+  }
+
+  #overview {
+    width: 95%;
+    margin-left: 5vw;
   }
 
   .logo-nav img {
-      width: 20%;
+    width: 20%;
   }
 
   .img-text img {
-      width: 20%;
+    width: 20%;
   }
 
   .img-text h5 {
-      width: 70%;
-      font-size: 70%;
+    width: 70%;
+    font-size: 70%;
   }
 
   .footerNav {
-      font-size: 80%;
+    font-size: 80%;
   }
 
 }
@@ -1103,44 +1018,44 @@ body {
 @media screen and (max-width: 600px) {
 
   .navbar {
-      position: fixed;
-      overflow: visible;
-      align-items: center;
+    position: fixed;
+    overflow: visible;
+    align-items: center;
   }
 
   .logo {
-      width: 8rem;
+    width: 8rem;
   }
 
   .menu {
-      display: none;
+    display: none;
   }
 
   .menu-button a {
-      display: flex;
-      position: absolute;
-      align-items: end;
+    display: flex;
+    position: absolute;
+    align-items: end;
   }
 
   .menu-button button {
-      display: none;
+    display: none;
   }
 
   .navbar a.icon {
-      padding: 3%;
-      color: white;
-      display: block;
+    padding: 3%;
+    color: white;
+    display: block;
   }
 
   .menu.responsive {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      align-items: end;
-      gap: 10px;
-      right: 2rem;
-      top: 5rem;
-      z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: end;
+    gap: 10px;
+    right: 2rem;
+    top: 5rem;
+    z-index: 10;
   }
 
 }
@@ -1148,7 +1063,12 @@ body {
 @media screen and (max-width: 769px) {
 
   .logo img {
-      width: 80%;
+    width: 80%;
+  }
+
+  .modal-content iframe {
+    width: 100%;
+    height: auto;
   }
 
 }
