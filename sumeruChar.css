@@ -70,11 +70,8 @@ body {
 }
 
 .menu a:hover {
-    /* border-top: 5px solid #FFCF0D; */
-    /* border-bottom: 5px solid transparent; */
     opacity: 100%;
     text-shadow: 1px 2px 4px #6BD2D9;
-    /* padding-top: 20px; */
 }
 
 .menu-button a {
@@ -104,7 +101,6 @@ body {
 
 #mainarea {
     width: 100%;
-    /* width: fit-content; */
     height: 100%;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.7fr;
@@ -142,10 +138,6 @@ body {
     align-items: center;
 }
 
-/* #mondstadt :active{
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-} */
-
 #mondstadtbar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
@@ -155,7 +147,6 @@ body {
 }
 
 #mondstadt::after {
-    /* display: none; */
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtafter.png?raw=true);
@@ -169,7 +160,6 @@ body {
 }
 
 #mondstadt:hover::after {
-    /* display: block; */
     width: 20vw;
 }
 
@@ -193,7 +183,6 @@ body {
 }
 
 #liyue::after {
-    /* display: none; */
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyueafter.png?raw=true);
@@ -203,7 +192,6 @@ body {
 }
 
 #liyue:hover::after {
-    /* display: block; */
     width: 20vw;
 }
 
@@ -227,7 +215,6 @@ body {
 }
 
 #inazuma::after {
-    /* display: none; */
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumaafter.png?raw=true);
@@ -237,7 +224,6 @@ body {
 }
 
 #inazuma:hover::after {
-    /* display: block; */
     width: 20vw;
 }
 
@@ -261,7 +247,6 @@ body {
 }
 
 #sumeru::after {
-    /* display: none; */
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruafter.png?raw=true);
@@ -271,7 +256,6 @@ body {
 }
 
 #sumeru:hover::after {
-    /* display: block; */
     width: 20vw;
 }
 
@@ -284,17 +268,13 @@ body {
 #charidentity {
     display: grid;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
-    /* height: calc(60vw + 30px); */
     width: calc(36vw + 50px);
-    /* height: calc(99vw + 100px); */
 }
 
 #charnation {
     display: grid;
     grid-template-rows: 0.8fr 0.2fr;
     margin-top: calc(7vw + 15px);
-    /* margin-left: calc(3vw + 20px); */
-    /* margin-right: 10vw; */
     border-bottom-color: #FFFFFF;
     border-bottom-width: 0.3vw;
     border-bottom-style: solid;
@@ -325,14 +305,7 @@ body {
     font-style: italic;
     font-weight: 80vw;
     font-size: calc(4vw + 30px);
-    /* font-line: */
-
     color: #FFFFFF;
-
-    /* mondstadthover
-
-hover characters in mondstadt
-*/
     text-shadow: 5px 5px 2px #2FBD0C;
 }
 
@@ -347,14 +320,7 @@ hover characters in mondstadt
     font-style: italic;
     font-weight: 80vw;
     font-size: calc(4vw + 30px);
-    /* font-line: */
-
     color: #FFFFFF;
-
-    /* mondstadthover
-
-hover characters in mondstadt
-*/
     text-shadow: 5px 5px 2px #2FBD0C;
 }
 
@@ -370,16 +336,11 @@ hover characters in mondstadt
     font-style: normal;
     font-weight: 200;
     font-size: calc(2vw + 5px);
-    /* line-height: 30px; */
-
     color: #FFFFFF;
-
-
 }
 
 #chardesc {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
-    /* background-color: #0AE5F3; */
     border-inline-color: white;
     border-inline-width: calc(0.1vw + 5px);
     border-inline-style: solid;
@@ -400,15 +361,12 @@ hover characters in mondstadt
 
 #chardesc h1 {
     margin: 5%;
-
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
     font-size: calc(0.8vw + 10px);
     line-height: calc(0.5vw + 20px);
-
     color: #FFFFFF;
-
 }
 
 #otherchar {
@@ -458,7 +416,6 @@ hover characters in mondstadt
     justify-content: flex-end;
     align-items: last baseline;
     z-index: 2;
-    /* height: 100vh; */
     width: calc(32vw + 50px);
 }
 
@@ -533,12 +490,12 @@ hover characters in mondstadt
 }
 
 @media screen and (max-width: 376px) {
-    
+
     .logo img {
         width: 80%;
     }
 
-    #mainarea{
+    #mainarea {
         display: grid;
         grid-template-columns: 0.3fr 1fr 0.7fr;
     }
@@ -566,8 +523,6 @@ hover characters in mondstadt
         display: grid;
         grid-template-rows: 0.8fr 0.2fr;
         margin-top: calc(15vw + 15px);
-        /* margin-left: calc(3vw + 20px); */
-        /* margin-right: 10vw; */
         border-bottom-color: #FFFFFF;
         border-bottom-width: 0.3vw;
         border-bottom-style: solid;
@@ -593,15 +548,8 @@ hover characters in mondstadt
         font-style: italic;
         font-weight: 80vw;
         font-size: calc(3vw + 30px);
-        /* font-line: */
-
         color: #FFFFFF;
-
-        /* mondstadthover
-    
-    hover characters in mondstadt
-    */
-    text-shadow: 3px 3px 0px #2FBD0C;
+        text-shadow: 3px 3px 0px #2FBD0C;
     }
 
     #charva {
@@ -615,7 +563,6 @@ hover characters in mondstadt
         font-style: normal;
         font-weight: 200;
         font-size: calc(1vw + 15px);
-        /* line-height: 30px; */
         color: #FFFFFF;
     }
 
@@ -623,7 +570,6 @@ hover characters in mondstadt
         z-index: 4;
         margin-top: calc(3vw + 10px);
         background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
-        /* background-color: #0AE5F3; */
         border-inline-color: white;
         border-inline-width: calc(0.1vw + 5px);
         border-inline-style: solid;
@@ -644,15 +590,12 @@ hover characters in mondstadt
 
     #chardesc h1 {
         margin: 5%;
-
         font-family: 'Inika';
         font-style: normal;
         font-weight: 400;
         font-size: calc(0.5vw + 7px);
         line-height: calc(0.5vw + 20px);
-
         color: #FFFFFF;
-
     }
 
     #otherchar {
@@ -666,14 +609,13 @@ hover characters in mondstadt
     }
 
     #othercharslist {
-        /* margin-left: 2vw; */
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
 
-    #otherchartitle{
+    #otherchartitle {
         margin-top: 14vw;
     }
 
@@ -692,7 +634,6 @@ hover characters in mondstadt
         justify-content: center;
         align-items: last baseline;
         z-index: 2;
-        /* height: 100vh; */
         width: calc(32vw + 50px);
     }
 
@@ -766,17 +707,17 @@ hover characters in mondstadt
 }
 
 @media screen and (max-width: 769px) {
-    
+
     .logo img {
         width: 80%;
     }
 
     #charbararea {
         width: calc(8vw + 10px);
-    margin-top: calc(5vw + 7px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        margin-top: calc(5vw + 7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #charbar {
@@ -810,14 +751,15 @@ hover characters in mondstadt
         height: calc(5vw + 10px);
     }
 
-    #charidentity{
+    #charidentity {
         z-index: 5;
         width: calc(27vw + 50px);
         display: grid;
-        grid-template-rows: 0.3fr 0.7fr 0.5fr 0.5fr;;
+        grid-template-rows: 0.3fr 0.7fr 0.5fr 0.5fr;
+        ;
     }
 
-    #charnametighnari h1{
+    #charnametighnari h1 {
         font-size: calc(3vw + 25px);
         text-shadow: 2px 2px 2px #2FBD0C;
     }

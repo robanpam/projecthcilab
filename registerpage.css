@@ -64,11 +64,8 @@
 }
 
 .menu a:hover {
-    /* border-top: 5px solid #FFCF0D; */
-    /* border-bottom: 5px solid transparent; */
     opacity: 100%;
     text-shadow: 1px 2px 4px #6BD2D9;
-    /* padding-top: 20px; */
 }
 
 .menu-button a {
@@ -76,6 +73,12 @@
     text-decoration: none;
     opacity: 80%;
     transition: all 0.2s;
+}
+
+.menu-button a.active {
+    color: white;
+    opacity: 100%;
+    text-shadow: 1px 2px 4px #6BD2D9;
 }
 
 .menu-button a:hover {
@@ -146,7 +149,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: calc(1vw + 15px);
-    /* line-height: 49px; */
     text-align: center;
     color: #FFFFFF;
 }
@@ -156,9 +158,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: calc(1vw + 10px);
-    /* line-height: 49px; */
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -179,7 +179,6 @@
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
-    /* border: 5px solid yellow; */
 }
 
 #signuptitle {
@@ -198,11 +197,9 @@
 }
 
 #registersection {
-    /* margin-top: 3vw; */
     display: flex;
     justify-content: center;
     align-items: start;
-    /* border: 5px solid blue; */
     height: 30vw;
 }
 
@@ -221,7 +218,6 @@
     height: 1vw;
     width: 20vw;
     color: white;
-    /* border: 5px solid yellow; */
 }
 
 #name {
@@ -302,8 +298,6 @@
     font-style: normal;
     font-weight: 300;
     font-size: calc(0.6vw + 8px);
-
-    /* identical to box height, or 200% */
     color: #FFFFFF;
 }
 
@@ -312,10 +306,8 @@
     display: flex;
     width: 100%;
     height: 100%;
-    /* border: 5px solid green; */
     justify-content: center;
     align-items: last baseline;
-    /* margin-bottom: 1vw; */
 }
 
 #forbutton button {

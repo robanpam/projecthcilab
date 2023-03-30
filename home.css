@@ -70,11 +70,8 @@
 }
 
 .menu a:hover {
-    /* border-top: 5px solid #FFCF0D; */
-    /* border-bottom: 5px solid transparent; */
     opacity: 100%;
     text-shadow: 1px 2px 4px #6BD2D9;
-    /* padding-top: 20px; */
 }
 
 .menu-button a {
@@ -103,7 +100,6 @@
 }
 
 .jumbotron {
-    /* background-image: url(assets/img/home/bg.jpg); */
     background-size: cover;
     width: 100%;
     height: 100vh;

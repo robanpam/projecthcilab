@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuegenshinbg.png?raw=true);
     background-size: cover;
     background-position: 50%;
-    background-attachment: fixed;   
+    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     height: 150vh;
@@ -71,11 +71,8 @@ body{
 }
 
 .menu a:hover {
-    /* border-top: 5px solid #FFCF0D; */
-    /* border-bottom: 5px solid transparent; */
     opacity: 100%;
     text-shadow: 1px 2px 4px #6BD2D9;
-    /* padding-top: 20px; */
 }
 
 .menu-button a {
@@ -103,15 +100,14 @@ body{
     display: none;
 }
 
-#mainarea{
+#mainarea {
     width: 100%;
-    /* width: fit-content; */
     height: 100%;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.7fr;
 }
 
-#charbararea{
+#charbararea {
     width: calc(17vw + 50px);
     margin-top: 5vh;
     display: flex;
@@ -119,7 +115,7 @@ body{
     align-items: center;
 }
 
-#charbar{
+#charbar {
     margin-left: 2vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -132,22 +128,18 @@ body{
     text-align: center;
 }
 
-.nation{
+.nation {
     padding-top: 1vw;
 }
 
-#mondstadt{
+#mondstadt {
     position: relative;
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-/* #mondstadt :active{
-    filter: drop-shadow(1px 2px 4px #6bd2d9);
-} */
-
-#mondstadtbar{
+#mondstadtbar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
     opacity: 50%;
@@ -155,8 +147,7 @@ body{
     z-index: 3;
 }
 
-#mondstadt::after{
-    /* display: none; */
+#mondstadt::after {
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtafter.png?raw=true);
@@ -165,23 +156,22 @@ body{
     transition: 0.5s;
 }
 
-#mondstadtbar:hover{
+#mondstadtbar:hover {
     opacity: 100%;
 }
 
-#mondstadt:hover::after{
-    /* display: block; */
+#mondstadt:hover::after {
     width: 20vw;
 }
 
-#liyue{
+#liyue {
     position: relative;
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-#liyuebar{
+#liyuebar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
     opacity: 100%;
@@ -189,12 +179,11 @@ body{
     z-index: 3;
 }
 
-#liyuebar:hover{
+#liyuebar:hover {
     opacity: 100%;
 }
 
-#liyue::after{
-    /* display: none; */
+#liyue::after {
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyueafter.png?raw=true);
@@ -203,19 +192,18 @@ body{
     transition: 0.5s;
 }
 
-#liyue:hover::after{
-    /* display: block; */
+#liyue:hover::after {
     width: 20vw;
 }
 
-#inazuma{
+#inazuma {
     position: relative;
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-#inazumabar{
+#inazumabar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
     opacity: 50%;
@@ -223,12 +211,11 @@ body{
     z-index: 3;
 }
 
-#inazumabar:hover{
+#inazumabar:hover {
     opacity: 100%;
 }
 
-#inazuma::after{
-    /* display: none; */
+#inazuma::after {
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumaafter.png?raw=true);
@@ -237,19 +224,18 @@ body{
     transition: 0.5s;
 }
 
-#inazuma:hover::after{
-    /* display: block; */
+#inazuma:hover::after {
     width: 20vw;
 }
 
-#sumeru{
+#sumeru {
     position: relative;
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-#sumerubar{
+#sumerubar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
     opacity: 50%;
@@ -257,12 +243,11 @@ body{
     z-index: 3;
 }
 
-#sumerubar:hover{
+#sumerubar:hover {
     opacity: 100%;
 }
 
-#sumeru::after{
-    /* display: none; */
+#sumeru::after {
     position: absolute;
     content: "";
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruafter.png?raw=true);
@@ -271,31 +256,26 @@ body{
     transition: 0.5s;
 }
 
-#sumeru:hover::after{
-    /* display: block; */
+#sumeru:hover::after {
     width: 20vw;
 }
 
 
-.nationbar{
+.nationbar {
     width: 4.5vw;
     height: 10vh;
 }
 
-#charidentity{
+#charidentity {
     display: grid;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
-    /* height: calc(60vw + 30px); */
     width: calc(36vw + 50px);
-    /* height: calc(99vw + 100px); */
 }
 
-#charnation{
+#charnation {
     display: grid;
     grid-template-rows: 0.8fr 0.2fr;
     margin-top: calc(7vw + 15px);
-    /* margin-left: calc(3vw + 20px); */
-    /* margin-right: 10vw; */
     border-bottom-color: #FFFFFF;
     border-bottom-width: 0.3vw;
     border-bottom-style: solid;
@@ -303,61 +283,49 @@ body{
     height: calc(3vw + 10px);
 }
 
-#charnation h1{
+#charnation h1 {
     font-size: calc(0.5vw + 15px);
     color: white;
 }
 
-#charnameva{
+#charnameva {
     display: grid;
     grid-template-rows: 1.5fr 0.5fr;
     width: calc(35vw + 50px);
     height: calc(10vw + 30px);
 }
 
-#charname{
+#charname {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#charname h1{
+#charname h1 {
     font-family: 'Tahoma';
-font-style: italic;
-font-weight: 80vw;
-font-size: calc(4vw + 30px);
-/* font-line: */
-
-color: #FFFFFF;
-
-/* mondstadthover
-
-hover characters in mondstadt
-*/
-text-shadow: 5px 5px 2px #F7A151;
+    font-style: italic;
+    font-weight: 80vw;
+    font-size: calc(4vw + 30px);
+    color: #FFFFFF;
+    text-shadow: 5px 5px 2px #F7A151;
 }
 
-#charva{
+#charva {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#charva h1{
+#charva h1 {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 200;
     font-size: calc(2vw + 5px);
-    /* line-height: 30px; */
-
     color: #FFFFFF;
-
-
 }
 
-#chardesc{
+#chardesc {
     background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuechardescbg.png?raw=true);
-    /* background-color: #0AE5F3; */
     border-inline-color: white;
     border-inline-width: calc(0.1vw + 5px);
     border-inline-style: solid;
@@ -369,27 +337,24 @@ text-shadow: 5px 5px 2px #F7A151;
     align-items: center;
     border-start-end-radius: calc(0.2vw + 15px);
     border-start-start-radius: calc(0.2vw + 10px);
-    border-inline-end-color:white;
-    border-inline-end-style:solid;
+    border-inline-end-color: white;
+    border-inline-end-style: solid;
     border-inline-end-width: calc(0.1vw + 5px);
     width: calc(35vw + 50px);
     height: calc(14vw + 20px);
 }
 
-#chardesc h1{
+#chardesc h1 {
     margin: 5%;
-
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
     font-size: calc(0.8vw + 10px);
     line-height: calc(0.5vw + 20px);
-
     color: #FFFFFF;
-
 }
 
-#otherchar{
+#otherchar {
     margin-top: calc(0.03vw + 10px);
     display: flex;
     flex-direction: column;
@@ -399,7 +364,7 @@ text-shadow: 5px 5px 2px #F7A151;
     height: calc(10vw + 30px);
 }
 
-#otherchartitle{
+#otherchartitle {
     margin-left: 1vw;
     margin-bottom: 1.5vw;
     display: flex;
@@ -407,12 +372,12 @@ text-shadow: 5px 5px 2px #F7A151;
     align-items: center;
 }
 
-#otherchartitle h1{
+#otherchartitle h1 {
     font-size: 1.3vw;
     color: white;
 }
 
-#othercharslist{
+#othercharslist {
     margin-left: 2vw;
     display: flex;
     justify-content: center;
@@ -420,27 +385,26 @@ text-shadow: 5px 5px 2px #F7A151;
     padding: 0;
 }
 
-.charlist{
+.charlist {
     width: calc(7vw + 10px);
     height: calc(8vw + 5px);
 }
 
 
-.charlist:hover{
+.charlist:hover {
     transform: scale(120%);
     transition: 100ms;
 }
 
-#charphoto{
+#charphoto {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: last baseline;
     z-index: 2;
-    /* height: 100vh; */
     width: calc(32vw + 50px);
 }
 
-#charphoto img{
+#charphoto img {
     width: calc(35vw + 20px);
     height: calc(50vw + 30px);
 }
@@ -510,7 +474,7 @@ text-shadow: 5px 5px 2px #F7A151;
     height: 50%;
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 376px) {
 
     .logo img {
         width: 80%;
@@ -518,13 +482,13 @@ text-shadow: 5px 5px 2px #F7A151;
 
     #charbararea {
         width: calc(15vw + 10px);
-    margin-top: calc(5vw + 7px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        margin-top: calc(5vw + 7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #charbar{
+    #charbar {
         margin-top: calc(3vw + 2px);
         height: calc(7vw + 5px);
         width: calc(6vw + 10px);
@@ -535,12 +499,10 @@ text-shadow: 5px 5px 2px #F7A151;
         text-align: center;
     }
 
-    #charnation{
+    #charnation {
         display: grid;
         grid-template-rows: 0.8fr 0.2fr;
         margin-top: calc(15vw + 15px);
-        /* margin-left: calc(3vw + 20px); */
-        /* margin-right: 10vw; */
         border-bottom-color: #FFFFFF;
         border-bottom-width: 0.3vw;
         border-bottom-style: solid;
@@ -548,57 +510,46 @@ text-shadow: 5px 5px 2px #F7A151;
         height: calc(3vw + 10px);
     }
 
-    #charnameva{
+    #charnameva {
         display: grid;
         grid-template-rows: 1.5fr 0.5fr;
         width: calc(35vw + 50px);
         height: calc(16vw + 30px);
     }
 
-    #charname{
+    #charname {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-    }
-    
-    #charname h1{
-        font-family: 'Tahoma';
-    font-style: italic;
-    font-weight: 80vw;
-    font-size: calc(4vw + 30px);
-    /* font-line: */
-    
-    color: #FFFFFF;
-    
-    /* mondstadthover
-    
-    hover characters in mondstadt
-    */
-    text-shadow: 3px 3px 2px #F7A151;
     }
 
-    #charva{
+    #charname h1 {
+        font-family: 'Tahoma';
+        font-style: italic;
+        font-weight: 80vw;
+        font-size: calc(4vw + 30px);
+        color: #FFFFFF;
+        text-shadow: 3px 3px 2px #F7A151;
+    }
+
+    #charva {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    
+
     #charva h1 {
         font-family: 'Tahoma';
         font-style: normal;
         font-weight: 200;
         font-size: calc(1vw + 15px);
-        /* line-height: 30px; */
-
         color: #FFFFFF;
-
     }
 
-    #chardesc{
+    #chardesc {
         z-index: 4;
         margin-top: calc(3vw + 10px);
         background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuechardescbg.png?raw=true);
-        /* background-color: #0AE5F3; */
         border-inline-color: white;
         border-inline-width: calc(0.1vw + 5px);
         border-inline-style: solid;
@@ -610,24 +561,22 @@ text-shadow: 5px 5px 2px #F7A151;
         align-items: center;
         border-start-end-radius: calc(0.2vw + 15px);
         border-start-start-radius: calc(0.2vw + 10px);
-        border-inline-end-color:white;
-        border-inline-end-style:solid;
+        border-inline-end-color: white;
+        border-inline-end-style: solid;
         border-inline-end-width: calc(0.1vw + 5px);
         width: calc(35vw + 50px);
         height: calc(32vw + 20px);
     }
 
-    #chardesc h1{
+    #chardesc h1 {
         margin: 5%;
-    
         font-family: 'Inika';
         font-style: normal;
         font-weight: 400;
         font-size: calc(0.5vw + 7px);
         line-height: calc(0.5vw + 20px);
-    
         color: #FFFFFF;
-    
+
     }
 
     #otherchar {
@@ -640,24 +589,23 @@ text-shadow: 5px 5px 2px #F7A151;
         height: calc(30vw + 30px);
     }
 
-    #othercharslist{
-        /* margin-left: 2vw; */
+    #othercharslist {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
 
-    #otherchartitle{
+    #otherchartitle {
         margin-top: 14vw;
     }
 
-    #otherchartitle h1{
+    #otherchartitle h1 {
         font-size: calc(1.0vw + 10px);
         color: white;
     }
 
-    .charlist{
+    .charlist {
         width: calc(8vw + 10px);
         height: calc(10vw + 5px);
     }
@@ -667,11 +615,10 @@ text-shadow: 5px 5px 2px #F7A151;
         justify-content: center;
         align-items: last baseline;
         z-index: 2;
-        /* height: 100vh; */
         width: calc(32vw + 50px);
     }
-    
-    #charphoto img{
+
+    #charphoto img {
         width: calc(40vw + 20px);
         height: calc(80vw + 30px);
     }
@@ -740,7 +687,7 @@ text-shadow: 5px 5px 2px #F7A151;
 
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
 
     .logo img {
         width: 80%;
@@ -748,13 +695,13 @@ text-shadow: 5px 5px 2px #F7A151;
 
     #charbararea {
         width: calc(8vw + 10px);
-    margin-top: calc(5vw + 7px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        margin-top: calc(5vw + 7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #charbar{
+    #charbar {
         margin-top: calc(3vw + 2px);
         height: calc(7vw + 5px);
         width: calc(6vw + 10px);
@@ -765,34 +712,35 @@ text-shadow: 5px 5px 2px #F7A151;
         text-align: center;
     }
 
-    #mondstadtbar{
-        width: calc(5vw + 10px);
-        height: calc(5vw + 10px);
-  r  }
-
-    #liyuebar{
+    #mondstadtbar {
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
     }
 
-    #inazumabar{
+    #liyuebar {
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
     }
 
-    #sumerubar{
+    #inazumabar {
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
     }
 
-    #mainarea{
+    #sumerubar {
+        width: calc(5vw + 10px);
+        height: calc(5vw + 10px);
+    }
+
+    #mainarea {
         height: 100%;
     }
 
-    #charidentity{
+    #charidentity {
         z-index: 5;
         width: calc(27vw + 50px);
         display: grid;
-        grid-template-rows: 0.3fr 0.8fr 0.5fr 0.5fr;;
+        grid-template-rows: 0.3fr 0.8fr 0.5fr 0.5fr;
+        ;
     }
 }
