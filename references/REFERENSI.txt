@@ -1,5 +1,7 @@
 Referensi Perancangan Design Prototype & Website
 
+Catatan: media screen yang digunakan adalah Desktop, Tablet (768px), dan Mobile M (375px)
+
 1. Genshin Impact Official Site
    https://genshin.hoyoverse.com/en/home
 
