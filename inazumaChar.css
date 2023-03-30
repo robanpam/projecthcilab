@@ -319,7 +319,7 @@ body {
     font-family: 'Tahoma';
     font-style: italic;
     font-weight: 80vw;
-    font-size: calc(1vw + 25px);
+    font-size: calc(2vw + 25px);
     color: #FFFFFF;
     text-shadow: 4px 4px 2px #E59AF8;
 }
@@ -334,7 +334,7 @@ body {
     font-family: 'Tahoma';
     font-style: italic;
     font-weight: 80vw;
-    font-size: calc(0.5vw + 25px);
+    font-size: calc(1.5vw + 25px);
     color: #FFFFFF;
     text-shadow: 4px 4px 2px #E59AF8;
 }
@@ -349,7 +349,7 @@ body {
     font-family: 'Tahoma';
     font-style: italic;
     font-weight: 80vw;
-    font-size: calc(0.5vw + 25px);
+    font-size: calc(3vw + 25px);
     color: #FFFFFF;
     text-shadow: 5px 5px 0px #E59AF8;
 }
