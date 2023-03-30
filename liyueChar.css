@@ -150,7 +150,7 @@ body{
 #mondstadtbar{
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 100%;
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -184,7 +184,7 @@ body{
 #liyuebar{
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 50%;
+    opacity: 100%;
     position: relative;
     z-index: 3;
 }
@@ -334,7 +334,7 @@ color: #FFFFFF;
 
 hover characters in mondstadt
 */
-text-shadow: 5px 5px 0px #F7A151;
+text-shadow: 5px 5px 2px #F7A151;
 }
 
 #charva{
@@ -345,12 +345,13 @@ text-shadow: 5px 5px 0px #F7A151;
 
 #charva h1{
     font-family: 'Tahoma';
-font-style: normal;
-font-weight: 200;
-font-size: calc(0.001 + 2px);
-/* line-height: 30px; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: calc(2vw + 5px);
+    /* line-height: 30px; */
 
-color: #FFFFFF;
+    color: #FFFFFF;
+
 
 }
 
@@ -515,12 +516,12 @@ color: #FFFFFF;
         width: 80%;
     }
 
-    #charbararea{
-        width: calc(17vw + 50px);
-        margin-top: calc(5vw + 7px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #charbararea {
+        width: calc(15vw + 10px);
+    margin-top: calc(5vw + 7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     #charbar{
@@ -551,7 +552,7 @@ color: #FFFFFF;
         display: grid;
         grid-template-rows: 1.5fr 0.5fr;
         width: calc(35vw + 50px);
-        height: calc(30vw + 30px);
+        height: calc(16vw + 30px);
     }
 
     #charname{
@@ -573,7 +574,7 @@ color: #FFFFFF;
     
     hover characters in mondstadt
     */
-    text-shadow: 5px 5px 0px #0AE5F3;
+    text-shadow: 3px 3px 2px #F7A151;
     }
 
     #charva{
@@ -582,21 +583,21 @@ color: #FFFFFF;
         align-items: center;
     }
     
-    #charva h1{
+    #charva h1 {
         font-family: 'Tahoma';
-    font-style: normal;
-    font-weight: 200;
-    font-size: calc(0.05 + 1px);
-    /* line-height: 30px; */
-    
-    color: #FFFFFF;
-    
+        font-style: normal;
+        font-weight: 200;
+        font-size: calc(1vw + 15px);
+        /* line-height: 30px; */
+
+        color: #FFFFFF;
+
     }
 
     #chardesc{
         z-index: 4;
         margin-top: calc(3vw + 10px);
-        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/liyuechardescbg.png?raw=true);
         /* background-color: #0AE5F3; */
         border-inline-color: white;
         border-inline-width: calc(0.1vw + 5px);
@@ -629,8 +630,8 @@ color: #FFFFFF;
     
     }
 
-    #otherchar{
-        margin-top: calc(0.03vw + 10px);
+    #otherchar {
+        margin-top: calc(0.03vw + -18px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -647,6 +648,10 @@ color: #FFFFFF;
         padding: 0;
     }
 
+    #otherchartitle{
+        margin-top: 14vw;
+    }
+
     #otherchartitle h1{
         font-size: calc(1.0vw + 10px);
         color: white;
@@ -657,14 +662,13 @@ color: #FFFFFF;
         height: calc(10vw + 5px);
     }
 
-    #charphoto{
+    #charphoto {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: last baseline;
         z-index: 2;
         /* height: 100vh; */
         width: calc(32vw + 50px);
-        margin-bottom: 20vw;
     }
     
     #charphoto img{
@@ -742,12 +746,12 @@ color: #FFFFFF;
         width: 80%;
     }
 
-    #charbararea{
-        width: calc(17vw + 50px);
-        margin-top: calc(5vw + 7px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #charbararea {
+        width: calc(8vw + 10px);
+    margin-top: calc(5vw + 7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     #charbar{
@@ -764,7 +768,7 @@ color: #FFFFFF;
     #mondstadtbar{
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
-    }
+  r  }
 
     #liyuebar{
         width: calc(5vw + 10px);
@@ -779,5 +783,16 @@ color: #FFFFFF;
     #sumerubar{
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
+    }
+
+    #mainarea{
+        height: 100%;
+    }
+
+    #charidentity{
+        z-index: 5;
+        width: calc(27vw + 50px);
+        display: grid;
+        grid-template-rows: 0.3fr 0.8fr 0.5fr 0.5fr;;
     }
 }

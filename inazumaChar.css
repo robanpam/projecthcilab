@@ -149,7 +149,7 @@ body {
 #mondstadtbar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 100%;
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -217,7 +217,7 @@ body {
 #inazumabar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 50%;
+    opacity: 100%;
     position: relative;
     z-index: 3;
 }
@@ -324,7 +324,73 @@ body {
     font-family: 'Tahoma';
     font-style: italic;
     font-weight: 80vw;
-    font-size: calc(1vw + 30px);
+    font-size: calc(3vw + 25px);
+    /* font-line: */
+
+    color: #FFFFFF;
+
+    /* mondstadthover
+
+hover characters in mondstadt
+*/
+    text-shadow: 5px 5px 0px #E59AF8;
+}
+
+#charnamekamisato{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#charnamekamisato h1{
+    font-family: 'Tahoma';
+font-style: italic;
+font-weight: 80vw;
+font-size: calc(1vw + 25px);
+/* font-line: */
+
+color: #FFFFFF;
+
+/* mondstadthover
+
+hover characters in mondstadt
+*/
+text-shadow: 4px 4px 2px #E59AF8;
+}
+
+#charnamekazuha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#charnamekazuha h1{
+    font-family: 'Tahoma';
+    font-style: italic;
+    font-weight: 80vw;
+    font-size: calc(0.5vw + 25px);
+    /* font-line: */
+
+    color: #FFFFFF;
+
+    /* mondstadthover
+
+hover characters in mondstadt
+*/
+    text-shadow: 4px 4px 2px #E59AF8;
+}
+
+#charnamekujou {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#charnamekujou h1{
+    font-family: 'Tahoma';
+    font-style: italic;
+    font-weight: 80vw;
+    font-size: calc(0.5vw + 25px);
     /* font-line: */
 
     color: #FFFFFF;
@@ -346,7 +412,7 @@ hover characters in mondstadt
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 200;
-    font-size: calc(0.001 + 2px);
+    font-size: calc(2vw + 5px);
     /* line-height: 30px; */
 
     color: #FFFFFF;
@@ -550,7 +616,7 @@ hover characters in mondstadt
         display: grid;
         grid-template-rows: 1.5fr 0.5fr;
         width: calc(35vw + 50px);
-        height: calc(30vw + 30px);
+        height: calc(16vw + 30px);
     }
 
     #charname {
@@ -572,7 +638,23 @@ hover characters in mondstadt
     
     hover characters in mondstadt
     */
-        text-shadow: 5px 5px 0px #F7A151;
+    text-shadow: 3px 3px 0px #E59AF8;
+    }
+
+    #charnamekamisato h1{
+        font-size: calc(0.3vw + 17px);
+        text-shadow: 1px 1px 0px #E59AF8;
+
+    }
+
+    #charnamekazuha h1{
+        font-size: calc(0.3vw + 15px);
+        text-shadow: 1px 1px 0px #E59AF8;
+    }
+
+    #charnamekujou h1{
+        font-size: calc(0.4vw + 25px);
+        text-shadow: 3px 3px 0px #E59AF8;
     }
 
     #charva {
@@ -585,7 +667,7 @@ hover characters in mondstadt
         font-family: 'Tahoma';
         font-style: normal;
         font-weight: 200;
-        font-size: calc(0.05 + 1px);
+        font-size: calc(1vw + 15px);
         /* line-height: 30px; */
 
         color: #FFFFFF;
@@ -595,7 +677,7 @@ hover characters in mondstadt
     #chardesc {
         z-index: 4;
         margin-top: calc(3vw + 10px);
-        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/inazumachardescbg.png?raw=true);
         /* background-color: #0AE5F3; */
         border-inline-color: white;
         border-inline-width: calc(0.1vw + 5px);
@@ -629,7 +711,7 @@ hover characters in mondstadt
     }
 
     #otherchar {
-        margin-top: calc(0.03vw + 10px);
+        margin-top: calc(0.03vw + -18px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -646,6 +728,10 @@ hover characters in mondstadt
         padding: 0;
     }
 
+    #otherchartitle{
+        margin-top: 14vw;
+    }
+
     #otherchartitle h1 {
         font-size: calc(1.0vw + 10px);
         color: white;
@@ -659,11 +745,10 @@ hover characters in mondstadt
     #charphoto {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: last baseline;
         z-index: 2;
         /* height: 100vh; */
         width: calc(32vw + 50px);
-        margin-bottom: 20vw;
     }
 
     #charphoto img {
@@ -742,11 +827,11 @@ hover characters in mondstadt
     }
 
     #charbararea {
-        width: calc(17vw + 50px);
-        margin-top: calc(5vw + 7px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: calc(8vw + 10px);
+    margin-top: calc(5vw + 7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     #charbar {
@@ -778,5 +863,12 @@ hover characters in mondstadt
     #sumerubar {
         width: calc(5vw + 10px);
         height: calc(5vw + 10px);
+    }
+
+    #charidentity{
+        z-index: 5;
+        width: calc(27vw + 50px);
+        display: grid;
+        grid-template-rows: 0.3fr 0.7fr 0.5fr 0.5fr;;
     }
 }
