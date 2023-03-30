@@ -149,7 +149,7 @@ body {
 #mondstadtbar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 100%;
+    opacity: 50%;
     position: relative;
     z-index: 3;
 }
@@ -251,7 +251,7 @@ body {
 #sumerubar {
     width: calc(4vw + 10px);
     height: calc(4vw + 10px);
-    opacity: 50%;
+    opacity: 100%;
     position: relative;
     z-index: 3;
 }
@@ -333,8 +333,31 @@ body {
 
 hover characters in mondstadt
 */
-    text-shadow: 5px 5px 0px #2FBD0C;
+    text-shadow: 5px 5px 2px #2FBD0C;
 }
+
+#charnametighnari {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#charnametighnari h1 {
+    font-family: 'Tahoma';
+    font-style: italic;
+    font-weight: 80vw;
+    font-size: calc(4vw + 30px);
+    /* font-line: */
+
+    color: #FFFFFF;
+
+    /* mondstadthover
+
+hover characters in mondstadt
+*/
+    text-shadow: 5px 5px 2px #2FBD0C;
+}
+
 
 #charva {
     display: flex;
@@ -346,15 +369,16 @@ hover characters in mondstadt
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 200;
-    font-size: calc(0.001 + 2px);
+    font-size: calc(2vw + 5px);
     /* line-height: 30px; */
 
     color: #FFFFFF;
 
+
 }
 
 #chardesc {
-    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+    background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
     /* background-color: #0AE5F3; */
     border-inline-color: white;
     border-inline-width: calc(0.1vw + 5px);
@@ -514,21 +538,26 @@ hover characters in mondstadt
         width: 80%;
     }
 
+    #mainarea{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.7fr;
+    }
+
     #charbararea {
-        width: calc(17vw + 50px);
+        width: calc(5vw + 30px);
         margin-top: calc(5vw + 7px);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: baseline;
     }
 
     #charbar {
         margin-top: calc(3vw + 2px);
         height: calc(7vw + 5px);
-        width: calc(6vw + 10px);
+        width: calc(2vw + 10px);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
         text-align: center;
     }
@@ -550,7 +579,7 @@ hover characters in mondstadt
         display: grid;
         grid-template-rows: 1.5fr 0.5fr;
         width: calc(35vw + 50px);
-        height: calc(30vw + 30px);
+        height: calc(16vw + 30px);
     }
 
     #charname {
@@ -563,7 +592,7 @@ hover characters in mondstadt
         font-family: 'Tahoma';
         font-style: italic;
         font-weight: 80vw;
-        font-size: calc(4vw + 30px);
+        font-size: calc(3vw + 30px);
         /* font-line: */
 
         color: #FFFFFF;
@@ -572,7 +601,7 @@ hover characters in mondstadt
     
     hover characters in mondstadt
     */
-        text-shadow: 5px 5px 0px #0AE5F3;
+    text-shadow: 3px 3px 0px #2FBD0C;
     }
 
     #charva {
@@ -585,17 +614,15 @@ hover characters in mondstadt
         font-family: 'Tahoma';
         font-style: normal;
         font-weight: 200;
-        font-size: calc(0.05 + 1px);
+        font-size: calc(1vw + 15px);
         /* line-height: 30px; */
-
         color: #FFFFFF;
-
     }
 
     #chardesc {
         z-index: 4;
         margin-top: calc(3vw + 10px);
-        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/mondstadtchardescbg.png?raw=true);
+        background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/characterspage/sumeruchardescbg.png?raw=true);
         /* background-color: #0AE5F3; */
         border-inline-color: white;
         border-inline-width: calc(0.1vw + 5px);
@@ -629,7 +656,7 @@ hover characters in mondstadt
     }
 
     #otherchar {
-        margin-top: calc(0.03vw + 10px);
+        margin-top: calc(0.03vw + -18px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -646,6 +673,10 @@ hover characters in mondstadt
         padding: 0;
     }
 
+    #otherchartitle{
+        margin-top: 14vw;
+    }
+
     #otherchartitle h1 {
         font-size: calc(1.0vw + 10px);
         color: white;
@@ -659,11 +690,10 @@ hover characters in mondstadt
     #charphoto {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: last baseline;
         z-index: 2;
         /* height: 100vh; */
         width: calc(32vw + 50px);
-        margin-bottom: 20vw;
     }
 
     #charphoto img {
@@ -742,11 +772,11 @@ hover characters in mondstadt
     }
 
     #charbararea {
-        width: calc(17vw + 50px);
-        margin-top: calc(5vw + 7px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: calc(8vw + 10px);
+    margin-top: calc(5vw + 7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     #charbar {
@@ -780,4 +810,15 @@ hover characters in mondstadt
         height: calc(5vw + 10px);
     }
 
+    #charidentity{
+        z-index: 5;
+        width: calc(27vw + 50px);
+        display: grid;
+        grid-template-rows: 0.3fr 0.7fr 0.5fr 0.5fr;;
+    }
+
+    #charnametighnari h1{
+        font-size: calc(3vw + 25px);
+        text-shadow: 2px 2px 2px #2FBD0C;
+    }
 }

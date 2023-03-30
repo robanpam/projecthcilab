@@ -104,7 +104,7 @@ body {
 
 #header {
   background-image: url(https://github.com/robanpam/projecthcilab/blob/main/assets/img/aboutus/header.png?raw=true);
-  height: calc(45vw + 30px);
+  /* height: 100%; */
   background-size: cover;
   /* width: calc(95vw + 46px); */
   width: 100%;
@@ -174,7 +174,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(32vw + -28px);
+  width: calc(30 + 30px);
 }
 
 /* #gamefeaturestxt{
